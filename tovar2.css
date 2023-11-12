@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inria-sans: "Inria Sans";
+  --font-inherit: inherit;
+  --font-grandstander: Grandstander;
+  --font-inria-serif: "Inria Serif";
+  --font-jetbrains-mono: "JetBrains Mono";
+  --font-inconsolata: Inconsolata;
+  --font-gost-type-au: "GOST Type AU";
+  --font-footlight-mt-light: "Footlight MT Light";
+  --font-gost-common: "GOST Common";
+  --font-cormorant-garamond: "Cormorant Garamond";
+  --font-graduate: Graduate;
+  --font-frank-ruhl-libre: "Frank Ruhl Libre";
+
+  /* font sizes */
+  --font-size-6xl: 25px;
+  --font-size-11xl: 30px;
+  --font-size-26xl: 45px;
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-whitesmoke-100: #f4f4f4;
+  --color-black: #000;
+  --color-lightskyblue: #8fbcff;
+  --color-darkslategray-100: #3b3b3c;
+  --color-dimgray-100: #676363;
+  --color-white: #fff;
+
+  /* Paddings */
+  --padding-14xl: 33px;
+
+  /* Border radiuses */
+  --br-7xs: 6px;
+  --br-16xl: 35px;
+}
