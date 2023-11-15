@@ -912,147 +912,161 @@
 .div48 {
   position: absolute;
 }
+
 .div47 {
   top: 0;
   left: 0;
   background-color: var(--color-darkslategray-100);
-  width: 1732px;
-  height: 480px;
+  width: clamp(3000px,5vw,10000px);
+  height: clamp(3000px,5vw,10000px);
 }
+
 .div48 {
-  top: 193px;
-  left: 985px;
+  top: 9.39vh; /* 193px to vh */
+  left: 54.28vw; /* 985px to vw */
   line-height: 112.9%;
   display: inline-block;
-  width: 306px;
-  height: 90px;
+  width: 9.39vw; /* 306px to vw */
+  height: 2.73vh; /* 90px to vh */
 }
+
 .telegram-jpeg1 {
   position: absolute;
-  top: 40.83px;
-  left: 161px;
+  top: 2.24vh; /* 40.83px to vh */
+  left: 9.28vw; /* 161px to vw */
   border-radius: var(--br-7xs);
-  width: 33.01px;
-  height: 29.79px;
+  width: 1.76vw; /* 33.01px to vw */
+  height: 1.59vh; /* 29.79px to vh */
   object-fit: cover;
 }
+
 .div49 {
   position: absolute;
-  top: 206.17px;
-  left: 702px;
-  width: 194.01px;
-  height: 70.62px;
+  top: 11.19vh; /* 206.17px to vh */
+  left: 38.63vw; /* 702px to vw */
+  width: 10.58vw; /* 194.01px to vw */
+  height: 3.85vh; /* 70.62px to vh */
   font-size: var(--font-size-11xl);
   font-family: var(--font-gost-type-au);
 }
 .group-icon1 {
   position: absolute;
-  height: 6.99%;
-  width: 1.91%;
-  top: 43.54%;
-  right: 48.27%;
-  bottom: 49.47%;
-  left: 49.83%;
+  height: 6.99vh; /* 6.99% to vh */
+  width: 1.91vw; /* 1.91% to vw */
+  top: 43.54vh; /* 43.54% to vh */
+  right: 48.27vw; /* 48.27% to vw */
+  bottom: 49.47vh; /* 49.47% to vh */
+  left: 49.83vw; /* 49.83% to vw */
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
 }
+
 .div46 {
   top: 0;
   left: 0;
-  width: 1732px;
-  height: 480px;
+  width: 94.7vw; /* 1732px to vw */
+  height: 26.04vh; /* 480px to vh */
 }
-.div46,
-.div50,
-.div51 {
-  position: absolute;
-}
+
 .div50 {
-  top: 87.5px;
-  left: 97.5px;
-  border-top: 1px solid var(--color-white);
+  top: 7.81vh; /* 87.5px to vh */
+  left: 5.33vw; /* 97.5px to vw */
+  border-top: 0.069vw solid var(--color-white); /* 1px to vw */
   box-sizing: border-box;
-  width: 1531px;
-  height: 1px;
+  width: 88.31vw; /* 1531px to vw */
+  height: 0.069vh; /* 1px to vh */
 }
+
 .div51 {
-  top: 25px;
-  left: 100px;
-  width: 1528px;
-  height: 40px;
+  top: 1.04vh; /* 25px to vh */
+  left: 5.47vw; /* 100px to vw */
+  width: 88.21vw; /* 1528px to vw */
+  height: 2.78vh; /* 40px to vh */
   font-size: var(--font-size-11xl);
   font-family: var(--font-footlight-mt-light);
 }
+
 .image-31-icon {
   position: absolute;
-  top: 119px;
-  left: 1392px;
-  width: 250px;
-  height: 250px;
+  top: 6.61vh; /* 119px to vh */
+  left: 76.07vw; /* 1392px to vw */
+  width:clamp(256px, 5vh, 512px) ;
+  height: clamp(256px, 5vh, 512px);
   object-fit: cover;
 }
+
 .div59,
 .div60 {
   position: absolute;
-  top: 119px;
-  left: 99px;
-  line-height: 131.9%;
+  top: 6.61vh; /* 119px to vh */
+  left: 5.47vw; /* 99px to vw */
+  line-height: 87.3%; /* 131.9% to a close approximation in percentage */
 }
+
 .div60 {
-  top: 188px;
+  top: 10.43vh; /* 188px to vh */
   text-decoration: underline;
-  line-height: 90.9%;
+  line-height: 60.6%; /* 90.9% to a close approximation in percentage */
 }
+
 .e-mail {
   margin-block-start: 0;
-  margin-block-end: 20px;
+  margin-block-end: 4.26vh; /* 20px to vh */
 }
+
 .infoolmihru2 {
   text-decoration: underline;
 }
+
 .infoolmihru1 {
   color: inherit;
 }
+
 .e-mail-infoolmihru {
   position: absolute;
-  top: 293px;
-  left: 702px;
+  top: 16.3vh; /* 293px to vh */
+  left: 38.63vw; /* 702px to vw */
   line-height: 61.9%;
   color: var(--font-inherit);
 }
+
 .div61 {
-  top: 143px;
-  left: 703px;
+  top: 7.86vh; /* 143px to vh */
+  left: 38.75vw; /* 703px to vw */
   font-size: var(--font-size-xl);
   line-height: 112.9%;
   text-transform: capitalize;
   font-family: var(--font-gost-type-au);
 }
+
 .div45,
 .div61,
 .div62 {
   position: absolute;
 }
+
 .div62 {
-  top: 283px;
-  left: 979px;
+  top: 15.89vh; /* 283px to vh */
+  left: 54.16vw; /* 979px to vw */
   font-size: var(--font-size-xl);
   line-height: 112.9%;
   display: inline-block;
-  width: 443px;
+  width: 24.17vw; /* 443px to vw */
 }
+
 .div45 {
-  top: 3779px;
-  left: -2px;
-  width: 1732px;
-  height: 480px;
+  top: clamp(3743px, 5vh,4755px); /* 3779px to vh */
+  left: -0.11vw; /* -2px to vw */
+  width: 94.7vw; /* 1732px to vw */
+  height: 26.04vh; /* 480px to vh */
   text-align: left;
   font-size: var(--font-size-6xl);
   color: var(--color-white);
   font-family: var(--font-inria-serif);
 }
+
 .div {
   position: relative;
   background-color: var(--color-gainsboro);
