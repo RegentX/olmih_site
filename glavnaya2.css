@@ -25,7 +25,7 @@ body {
   --font-size-31xl: 50px;*/
   --font-size-xl: clamp(10px, 1.5vw, 15px);
   --font-size-6xl: clamp(15px, 2vw, 20px);
-  --font-size-11xl: clamp(25px, 3vw, 35px);
+  --font-size-11xl: clamp(2vw, 3vw, 3.5vw);
   --font-size-26xl: clamp(40px, 4.5vw, 55px);
   --font-size-16xl: clamp(30px, 3.5vw, 40px);
   --font-size-31xl: clamp(45px, 5vw, 65px);
