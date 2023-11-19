@@ -7,10 +7,17 @@ body {
 /* Custom CSS class for changing font color */
 .navbar.custom-bg-color .nav-link {
   color: #333; /* White color for links */
+  font-size:larger;
+  letter-spacing: 1px;
+  padding-inline-start: 100px;
 }
 
 .navbar.custom-bg-color-grey .nav-link {
   color: #fff; /* Dark grey color for links */
+ font-size:x-large;
+ letter-spacing: 2px;
+ padding: 40px;
+
 }
 
 .navbar.custom-bg-color .nav-link:hover,
@@ -142,17 +149,57 @@ div.list-section li {
   margin-right: 10px; /* Spacing between logo and company name */
 }
 
-.header-company-name {
-  font-size: 1.5rem; /* Adjust as needed */
+.header-end-text {
+  font-size: 1.5rem; /* Когда точность на превом месте */
   font-weight: bold;
+  letter-spacing: 2px;
+  
 }
 
-.header-center-text {
-  font-size: 1.2rem; /* Adjust as needed */
+.header-between-info { /* Гарантия качества */
+  font-weight: bold;
+  font-size: xx-large;
+  color:#0056b3;
+  text-align: center;
+  letter-spacing: 3px;
+  padding-top: 175px;
+}
+
+.header-between-info p { /* Гарантия качества */
+margin-top: -20px;
+}
+
+.custom-padding-from-quality { /* Паддинги для инсты, тг и часы работы  */
+  padding-left: 150px;
+  padding-top: 100px;
+}
+
+.header-working-hours-time { /* Часы работы с 9 до 15  */
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: x-large;
+}
+
+.header-social-icons { /* Тг и инст */
+  font-weight: 300;
+  font-size: x-large;
+}
+
+.custom-space { /* Когда точность на первом месте (div) */
+padding-top: 175px;
+text-align: start;
 }
 
 .header-phone {
-  font-size: 1rem; /* Adjust as needed */
+  font-size: 1.25rem; /* Звоните в рабочее время */
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.header-phone-number {
+  font-size: 1rem; /* Nomer telephona */
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .header-contact-info p {
@@ -170,11 +217,15 @@ div.list-section li {
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
-  .header-center-text,
+  .header-end-text,
   .header-phone,
-  .header-contact-info {
-    text-align: center;
+  .header-contact-info,
+  .header-phone-number,
+  .header-working-hours-time,
+  .custom-padding-from-quality {
+    text-align: start;
     margin-top: 10px;
+    padding-left: 0px;
   }
 
   .header .col-md-4 {
