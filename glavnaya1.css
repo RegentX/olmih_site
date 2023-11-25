@@ -24,6 +24,9 @@ body {
   padding-right: 55px;
   padding-top: 40px;
   padding-bottom: 40px;
+  font-family: 'Footlight MT Light';
+  font-style: normal;
+  font-weight: 300;
 }
 
 .navbar.custom-bg-color .nav-link:hover,
@@ -98,18 +101,18 @@ body {
 }
 
 .img-fluid-header {
-  width: 175px; /* Set your desired width */
-  height: 175px; /* Set your desired height */
-  object-fit: contain; /* This will make sure the image is scaled correctly within the dimensions */
+  width: 175px;
+  height: 175px;
+  object-fit: contain;
   align-items: center;
-  filter: url(#duotone); /* Add the duotone filter */
+  mix-blend-mode: exclusion;
 }
 
 
 .custom-img {
-  width: 100px; /* Set your desired width */
-  height: 100px; /* Set your desired height */
-  object-fit: contain; /* This will make sure the image is scaled correctly within the dimensions */
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   align-items: center;
 }
 
@@ -183,7 +186,6 @@ div.list-section {
 
 .header-end-text {
   font-size: 1.5rem; /* Когда точность на превом месте */
-  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -211,8 +213,10 @@ div.list-section {
 .header-working-hours-time {
   /* Часы работы с 9 до 15  */
   padding-top: 10px;
-  font-weight: 300;
   font-size: x-large;
+  font-family: 'GOST Type AU';
+font-style: normal;
+font-weight: 400;
 }
 
 .header-social-icons {
