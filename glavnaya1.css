@@ -405,10 +405,14 @@ text-decoration-line: underline;
   .header-contact-info,
   .header-phone-number,
   .header-working-hours-time,
-  .custom-padding-from-quality {
+  .custom-padding-from-quality{
     text-align: start;
     margin-top: 10px;
     padding-left: 0px;
+  }
+
+  .card-title {
+    font-size: 45px;
   }
 
   .header .col-md-4 {
@@ -418,5 +422,19 @@ text-decoration-line: underline;
 @media (max-width: 768px) {
   .custom-img-footer{
     align-items: start;
+  }
+}
+
+@media (max-width: 1255px) {  /* Applies styles for screens smaller than 1256px */
+  .hide-until-large {
+    display: none;
+  }
+}
+
+@media (max-width: 1255px) {  /* Applies styles for screens smaller than 1256px */
+  .center-when-min {
+    text-align: center; /* Center the text */
+    margin-left: auto;  /* Center block-level elements */
+    margin-right: auto;
   }
 }
