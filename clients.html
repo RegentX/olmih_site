@@ -1,296 +1,141 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Clients</title>
 
-    <link rel="stylesheet" href="clients2.css" />
-    <link rel="stylesheet" href="clients1.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Footlight MT Light:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Frank Ruhl Libre:wght@700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Graduate:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=GOST Type AU:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cormorant Garamond:wght@700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=GOST Common:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Francois One:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Georama:wght@600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="div">
-      <img class="icon" alt="" src="./kartinkiclientnaya/@2x.png" />
 
-      <div class="div1">
-        <div class="div2"></div>
-        <div class="div3">
-          <div class="div4">Фотогалерея</div>
-          <div class="div5">Контакты</div>
-          <div class="div6">Доставка</div>
-          <div class="div7">Обратная связь</div>
-          <div class="div8">Наши клиенты</div>
-          <div class="div9">Статьи</div>
-          <div class="div10">О компании</div>
-        </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .logo-container {
+      margin: 10px 0;
+      text-align: left;
+    }
+    .logo {
+      margin: 15px;
+
+      display: inline-block;
+      padding: 10px;
+      background-color: #fff; /* Optional: if logos have transparent backgrounds */
+    }
+    .logo img {
+      max-width: 150px; /* Adjust as needed */
+      max-height: 200px; /* Adjust as needed */
+    }
+  </style>
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+
+
+<div class="container">
+  <h1 class="text-left mt-4">Наши клиенты</h1>
+  <p class="text-left">На этой странице мы  размещаем логотипы клиентов, с которыми компания "ОЛМИХ" имеет долгосрочные и дружественные отношения. Если Ваша компания имеет договорные отношения с нашей компанией, но не представлена на этой странице - напишите нам по электронной почте
+    info@olmih.ru и мы с радостью разместим логотип Вашей компании. Обычно это занимает 2-3 рабочих дня.</p>
+
+  <div class="logo-container">
+    <!-- Row for logos -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-39@2x.png" alt="Client Logo 1">
       </div>
-      <div class="div11">
-        <div class="div12">
-          <img class="icon1" alt="" src="./kartinkiclientnaya/-1@2x.png" />
-
-          <b class="b">Когда точность на первом месте!</b>
-          <img class="group-icon" alt="" src="./kartinkiclientnaya/group@2x.png" />
-        </div>
-        <div class="div13">
-          <p class="p">Гарантия</p>
-          <p class="p">Качества</p>
-          <p class="p">100%</p>
-        </div>
-        <div class="div14">
-          <div class="inst-knkfvnd-tg-container">
-            <p class="p">inst: knkfvnd</p>
-            <p class="p">tg: nvdkd</p>
-          </div>
-          <img
-            class="telegram-jpeg"
-            alt=""
-            src="./kartinkiclientnaya/telegram--jpeg@2x.png"
-          />
-        </div>
-        <div class="div15">
-          <img class="icon2" alt="" src="./kartinkiclientnaya/1@2x.png" />
-
-          <b class="b1">ОЛМИХ</b>
-        </div>
-        <div class="div16">
-          <p class="p">Звоните в рабочее время</p>
-          <p class="p">
-            <span> </span>
-            <span class="span">8 (984) 638 47 54</span>
-          </p>
-        </div>
-        <div class="div17">
-          <p class="p">Часы работы:</p>
-          <p class="p">С 9.00 до 15.00 по будням</p>
-        </div>
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-40@2x.png" alt="Client Logo 2">
       </div>
-      <div class="div18">
-        <div class="div19"></div>
-        <div class="div20" id="container6">
-          <div class="child"></div>
-          <b class="b2">Каталог весов</b>
-        </div>
-        <div class="div21">
-          <div class="item"></div>
-          <b class="b3">Ремонт весов</b>
-        </div>
-        <div class="div22">
-          <div class="inner"></div>
-          <b class="b4">
-            <p class="p7">Калибровка</p>
-            <p class="p">весов</p>
-          </b>
-        </div>
-        <div class="div23">
-          <div class="rectangle-div"></div>
-          <b class="b5">
-            <p class="p7">Поверка</p>
-            <p class="p">весов</p>
-          </b>
-        </div>
-        <div class="div24">
-          <div class="child1"></div>
-          <b class="b6">
-            <p class="p7">Тех.обслуживание</p>
-            <p class="p">весов</p>
-          </b>
-        </div>
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-41@2x.png" alt="Client Logo 3">
       </div>
-      <div class="ellipse-div"></div>
-      <div class="child2"></div>
-      <div class="child3"></div>
-      <div class="child4"></div>
-      <div class="infoolmihru-container">
-        <p class="p">
-          На этой странице мы размещаем логотипы клиентов, с которыми компания
-          "ОЛМИХ" имеет долгосрочные и дружественные отношения. Если Ваша
-          компания имеет договорные отношения с нашей компанией, но не
-          представлена на этой странице - напишите нам по электронной почте
-        </p>
-        <p class="p">
-          <a
-            class="infoolmihru1"
-            href="http://olmih.ru/obratnaysvyaz"
-            target="_blank"
-          >
-            <span class="infoolmihru2">info@olmih.ru</span>
-          </a>
-          и мы с радостью разместим логотип Вашей компании. Обычно это занимает
-          2-3 рабочих дня.
-        </p>
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-42@2x.png" alt="Client Logo 4">
       </div>
-      <div class="div25">
-        <img class="image-39-icon" alt="" src="./kartinkiclientnaya/image-39@2x.png" />
-
-        <img class="image-40-icon" alt="" src="./kartinkiclientnaya/image-40@2x.png" />
-
-        <img class="image-41-icon" alt="" src="./kartinkiclientnaya/image-41@2x.png" />
-
-        <img class="image-42-icon" alt="" src="./kartinkiclientnaya/image-42@2x.png" />
-
-        <img class="image-43-icon" alt="" src="./kartinkiclientnaya/image-43@2x.png" />
-
-        <img class="image-44-icon" alt="" src="./kartinkiclientnaya/image-44@2x.png" />
-
-        <img class="image-45-icon" alt="" src="./kartinkiclientnaya/image-45@2x.png" />
-
-        <img class="image-46-icon" alt="" src="./kartinkiclientnaya/image-46@2x.png" />
-
-        <img class="image-47-icon" alt="" src="./kartinkiclientnaya/image-47@2x.png" />
-
-        <img class="image-48-icon" alt="" src="./kartinkiclientnaya/image-48@2x.png" />
-
-        <img class="image-49-icon" alt="" src="./kartinkiclientnaya/image-49@2x.png" />
-
-        <img class="image-50-icon" alt="" src="./kartinkiclientnaya/image-50@2x.png" />
-
-        <img class="image-51-icon" alt="" src="./kartinkiclientnaya/image-51@2x.png" />
-
-        <img class="image-52-icon" alt="" src="./kartinkiclientnaya/image-52@2x.png" />
-
-        <img class="image-53-icon" alt="" src="./kartinkiclientnaya/image-53@2x.png" />
-
-        <img class="image-54-icon" alt="" src="./kartinkiclientnaya/image-54@2x.png" />
-
-        <img class="image-55-icon" alt="" src="./kartinkiclientnaya/image-55@2x.png" />
-
-        <img class="image-56-icon" alt="" src="./kartinkiclientnaya/image-56@2x.png" />
-
-        <img class="image-57-icon" alt="" src="./kartinkiclientnaya/image-57@2x.png" />
-
-        <img class="image-58-icon" alt="" src="./kartinkiclientnaya/image-58@2x.png" />
-
-        <img class="image-59-icon" alt="" src="./kartinkiclientnaya/image-59@2x.png" />
-
-        <img class="image-60-icon" alt="" src="./kartinkiclientnaya/image-60@2x.png" />
-
-        <img class="image-61-icon" alt="" src="./kartinkiclientnaya/image-61@2x.png" />
-
-        <img class="image-62-icon" alt="" src="./kartinkiclientnaya/image-62@2x.png" />
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-43@2x.png" alt="Client Logo 5">
       </div>
-      <div class="div26">Наши клиенты</div>
-      <div class="div27" id="container13">
-        <div class="child5"></div>
-        <b class="b7">Главная</b>
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-44@2x.png" alt="Client Logo 6">
       </div>
-      <div class="div28">
-        <div class="div29">
-          <div class="div30"></div>
-          <div class="div31">
-            <p class="p">Часы работы:</p>
-            <p class="p">С 9.00 до 15.00 по будням</p>
-          </div>
-          <div class="div32">
-            <div class="inst-knkfvnd-tg-container1">
-              <p class="p">inst: knkfvnd</p>
-              <p class="p">tg: nvdkd</p>
-            </div>
-            <img
-              class="telegram-jpeg1"
-              alt=""
-              src="./kartinkiclientnaya/telegram--jpeg1@2x.png"
-            />
-          </div>
-        </div>
-        <div class="div33"></div>
-        <div class="div34">
-          <div class="div35">Фотогалерея</div>
-          <div class="div36">Контакты</div>
-          <div class="div37">Доставка</div>
-          <div class="div38">Обратная связь</div>
-          <div class="div39">Наши клиенты</div>
-          <div class="div40">Статьи</div>
-          <div class="div41">О компании</div>
-        </div>
-        <img class="image-31-icon" alt="" src="./kartinkiclientnaya/image-31@2x.png" />
-
-        <div class="div42">
-          <span>Интернет-магазин </span>
-          <b>ОЛМИХ</b>
-          <span>, 1995 - 2023</span>
-        </div>
-        <div class="div43">
-          <p class="blank-line">Политика конфиденциальности</p>
-          <p class="blank-line">&nbsp;</p>
-          <p class="blank-line">Согласие на обработку персональных данных</p>
-          <p class="blank-line">&nbsp;</p>
-          <p class="blank-line">Полезные статьи</p>
-          <p class="blank-line">&nbsp;</p>
-          <p class="p">Руководства по эксплуатации</p>
-        </div>
-        <div class="e-mail-infoolmihru">
-          <p class="blank-line">E-mail</p>
-          <p class="p">
-            <a
-              class="infoolmihru1"
-              href="http://olmih.ru/page/2"
-              target="_blank"
-            >
-              <span class="infoolmihru2"> info@olmih.ru</span>
-            </a>
-          </p>
-        </div>
-        <div class="div44">
-          <p class="p">тел.: 8(495) 366-39-92</p>
-          <p class="p">факс : 8(495) 365-19-16</p>
-        </div>
-        <div class="div45">
-          <p class="p">ООО "ОЛМИХ"</p>
-          <p class="p">г. Москва ул. Окружной проезд д. 18</p>
-        </div>
-        <img class="group-icon1" alt="" src="./kartinkiclientnaya/group1@2x.png" />
+      <div class="col-lg-4 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-45@2x.png" alt="Client Logo 7">
       </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-46@2x.png" alt="Client Logo 8">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-47@2x.png" alt="Client Logo 9">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-48@2x.png" alt="Client Logo 10">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-49@2x.png" alt="Client Logo 11">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-50@2x.png" alt="Client Logo 12">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-51@2x.png" alt="Client Logo 13">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-52@2x.png" alt="Client Logo 14">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-53@2x.png" alt="Client Logo 15">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-54@2x.png" alt="Client Logo 16">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-55@2x.png" alt="Client Logo 17">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-56@2x.png" alt="Client Logo 18">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-57@2x.png" alt="Client Logo 19">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-58@2x.png" alt="Client Logo 20">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-59@2x.png" alt="Client Logo 21">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-60@2x.png" alt="Client Logo 22">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-61@2x.png" alt="Client Logo 23">
+      </div>
+      <div class="col-lg-3 col-md-6 logo">
+        <img src="kartinkiclientnaya/image-62@2x.png" alt="Client Logo 24">
+      </div>
+      <!-- Repeat for each logo -->
     </div>
+  </div>
 
-    <script>
-      var container6 = document.getElementById("container6");
-      if (container6) {
-        container6.addEventListener("click", function (e) {
-          // Please sync "Каталог " to the project
-        });
-      }
-      
-      var container13 = document.getElementById("container13");
-      if (container13) {
-        container13.addEventListener("click", function (e) {
-          // Please sync "Главная" to the project
-        });
-      }
-      </script>
-  </body>
+</div>
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
