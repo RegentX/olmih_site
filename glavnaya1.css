@@ -1,7 +1,10 @@
 /* custom.css */
 body {
   font-family: "Your font", sans-serif; /* Specify your font */
+  max-width: 100vw;
 }
+
+
 
 .main-container-custom-bg {
   background-color: #d3d3d3;
@@ -386,6 +389,11 @@ text-decoration-line: underline;
 .navbar-nav .nav-link {
   font-size: 23px; /* Adjust font size as needed */
   color: #fff; /* This sets the color to a light grey */
+}
+
+#footer-call-img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {

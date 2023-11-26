@@ -4,236 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Catalog</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./katalogstili1.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .product-card {
-      max-width: 100vw;
-      max-height: 200vh;
-      height: auto;
-      border: 0.5px solid black;
-      border-radius: 30px;
-      overflow: auto;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      margin: 5vh 20vw 5vh 20vw;
-      background-color: #fff;
-      align-items: stretch;
-      padding: 2% 0;
-    }
-
-    .product-body {
-      display: flex;
-      justify-content: center; /* Aligns children to the start of the parent element */
-      align-items: center; /* Centers children vertically within the parent element */
-      flex-wrap: wrap;
-      width: 100%;
-      height: auto;
-    }
-
-    .product-header {
-      display: flex;
-      justify-content: center; /* Horizontally center content */
-      align-items: center;     /* Vertically center content */
-      padding: 1.5vh 0 0 0;
-    }
-
-    .product-header-title {
-      text-align: center;
-      font-family: 'Inconsolata', monospace;
-      font-size: 2.5vh;
-    }
-
-    .product-image img {
-       /* Vertically centers the child element (image) */
-      /*justify-content: center;*/
-    }
-
-    #vesy1 {
-      width: 100%;
-      margin: auto;
-    }
-
-    .product-image-wrap {
-      display: flex;
-      justify-content: center; /* Horizontally center all children */
-      align-items: center;     /* Vertically center all children */
-      flex-wrap: wrap;
-      width: 35%;
-      height: 100%;
-    }
-
-    .product-details {
-      padding: 2% 0 0 0;
-      flex-direction: column;
-       /* Adjusts children spacing */
-      overflow: auto; /* Adds scrollbar if content overflows */
-      height: 100%;
-      width: 40%;
-    }
-
-    .product-sale {
-      padding: 2% 2% 2% 2%;
-      width: 25%;
-      /*justify-content: center; !* Horizontally center all children *!*/
-      /*align-items: center;*/
-    }
-
-    .product-title {
-      margin: 0;
-      color: #333;
-      font-size: 1.2em;
-    }
-
-    .product-actions {
-      display: flex;
-      justify-content: center;
-      margin: 3% 0 0 0;
-    }
-
-    .product-description {
-      color: #666;
-      font-size: 1.3em;
-    }
-
-    .product-articular {
-      font-size: 1.5em;
-    }
-
-    .product-price {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .price {
-      color: #000000;
-      font-size: 1.5em;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .order-button {
-      background-color: #FF3030;
-      border-radius: 20px;
-      color: white;
-      border: none;
-      padding: 1em 2.2em;
-      font-weight: normal;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      font-size: 1.5em;
-    }
-
-    .order-button:hover {
-      background-color: #4CAE4C;
-    }
-
-    @media (max-width: 850px) {
-
-      .product-card {
-        margin: 10% 10%;
-      }
-
-      .product-body {
-        flex-direction: column; /* Stacks child elements vertically */
-      }
-
-      .product-image-wrap, .product-details, .product-sale {
-        width: 100%; /* Sets width of each child to full container width */
-      }
-
-      #vesy1 {
-        width:85%; /* Ensures image takes full width */
-        height: auto; /* Maintains aspect ratio */
-      }
-
-      .product-details {
-        padding: 0 10% 0 10%;
-        font-size: 1em;
-      }
-
-      .price {
-        font-size: 1.5em;
-      }
-
-      .order-button {
-        font-size: 1.3em;
-      }
-    }
-
-    @media (min-width: 851px) and (max-width: 1000px) {
-      .product-card {
-        margin: 10% 10%;
-      }
-    }
-
-    @media (min-width: 530px) and (max-width: 850px) {
-      #vesy1 {
-        width: 70%;
-        margin: auto;
-      }
-    }
-
-    @media (min-width: 851px) and (max-width: 1500px) {
-
-      #vesy1 {
-        width:85%; /* Ensures image takes full width */
-        height: auto; /* Maintains aspect ratio */
-      }
-
-      .product-description {
-        font-size: 1em;
-      }
-
-      .product-articular {
-        font-size: 1em;
-      }
-
-      .price {
-        font-size: 1.3em;
-      }
-
-      .order-button {
-        font-size: 1.3em;
-        padding: 10% 15%;
-      }
-    }
-
-    @media (min-width: 1800px) {
-      .product-description {
-        font-size: 2em;
-      }
-
-      .product-articular {
-        font-size: 2em;
-      }
-
-      .product-price {
-        font-size: 1.7em;
-      }
-
-      .order-button {
-        font-size: 1.5em;
-      }
-    }
-
-  </style>
 </head>
 <body>
 <header>
-  <!-- Navigation and header content goes here -->
-</header>
+  <nav class="navbar navbar-expand-lg custom-bg-color">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name1">О компании</a>
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name2">Фотогалерея</a>
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name3">Обратная связь</a>
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name4">Доставка</a>
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name5">Контакты</a>
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name6">Статьи</a>
+      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name7">Наши клиенты</a>
+    </div>
+  </nav>
+  <div class="container-fluid py-3 main-container-custom-bg background-image">
+    <div class="row pt-3">
+      <div class="col-md-3 text-center center-when-min">
+        <img class="img-fluid-header" alt="" src="./kartinkiglavnaya/@2x.png" />
+        <h1 class="b9">ОЛМИХ</h1>
+      </div>
+      <div class="col-md-4 text-end custom-space hide-until-large">
+        <p class="header-end-text">Когда точность на первом месте!</p>
+        <p class="header-phone">Звоните в Рабочее Время</p>
+        <p class="header-phone-number">8 (495) 366-39-92</p>
+        <p class="header-phone-number">8 (910) 471-46-52</p>
+      </div>
+      <div class="header-between-info hide-until-large">
+        <p>Гарантия</p>
+        <p>Качества</p>
+        <p>100%</p>
+      </div>
+      <div class="col-md-3 text-start custom-padding-from-quality hide-until-large">
+        <div class="header-social-icons">
+          <span><i class="bi bi-instagram"></i> olmih.ru</span>
+        </div>
+        <div class="header-social-icons">
+          <span><i class="bi bi-telegram"></i> Nvdkd</span>
+        </div>
+        <div class="header-working-hours-time">
+          <span>Часы Работы:</span>
+        </div>
+        <div class="header-working-hours-time">
+          <span>с 9.00 до 15.00 по будням</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color-grey">
 
+      <div class="navbar-nav" id="nav-bar-low">
+        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name1"
+        >Каталог весов</a
+        >
+        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name2"
+        >Ремонт весов</a
+        >
+        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name3"
+        >Тех.обслуживание весов</a
+        >
+        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name4"
+        >Проверка весов</a
+        >
+        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name5"
+        >Калибровка весов</a
+        >
+      </div>
+
+  </nav>
+</header>
 <main>
   <section class="product">
     <div class="product-card">
@@ -269,8 +120,53 @@
   <!-- Repeat for other products -->
 </main>
 
-<footer>
-  <!-- Footer content goes here -->
+<footer class="footer text-white pb-2">
+  <div class="container-fluid custom-padding">
+    <nav class="navbar navbar-expand-lg">
+      <div class="navbar-nav w-100 d-flex custom-navbar">
+        <a class="nav-item nav-link" href="#">О компании</a>
+        <a class="nav-item nav-link" href="#">Фотогалерея</a>
+        <a class="nav-item nav-link" href="#">Обратная связь</a>
+        <a class="nav-item nav-link" href="#">Доставка</a>
+        <a class="nav-item nav-link" href="#">Контакты</a>
+        <a class="nav-item nav-link" href="#">Статьи</a>
+        <a class="nav-item nav-link" href="#">Наши клиенты</a>
+      </div>
+    </nav>
+    <div class="hr-line"></div>
+    <div class="row pt-3">
+      <div class="col-md-4 order-1">
+        <p class="mb-0">Интернет-магазин ОЛМИХ, 1995 - 2023</p>
+        <ul class="list-unstyled">
+          <li>Политика конфиденциальности</li>
+          <li>Согласие на обработку персональных данных</li>
+          <li>Полезные статьи</li>
+          <li>Руководства по эксплуатации</li>
+        </ul>
+      </div>
+      <div class="col-md-3 order-2 custom-order-pad-2">
+        <p>Тел: 8(495) 366-39-92</p>
+        <p>Факс: 8(495) 365-19-16</p>
+        <p class="bi bi-instagram"> olmih.ru</p>
+        <p class="bi bi-telegram"> Nvdkd</p>
+        <p>E-mail: info@olmih.ru</p>
+      </div>
+      <div class="col-md-3 order-3 custom-order-pad-3">
+        <p>Часы работы:</p>
+        <p>С 9:00 до 15:00 по будням</p>
+        <p>ООО "ОЛМИХ"</p>
+        <p>г. Москва ул. Окружной проезд д. 18</p>
+      </div>
+      <div class="col-md-2 d-flex  order-4">
+        <img
+                src="./kartinkiglavnaya/image-31@2x.png"
+                alt="Phone"
+                class="img-fluid custom-img-footer"
+                id="footer-call-img"
+        />
+      </div>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
