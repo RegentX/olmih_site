@@ -115,11 +115,11 @@ font-size: 49px;
 }
 
 .img-fluid-header {
-  width: 175px;
-  height: 175px;
+  width: 256px;
+  height: 256px;
   object-fit: contain;
   align-items: center;
-  mix-blend-mode: exclusion;
+
 }
 
 
