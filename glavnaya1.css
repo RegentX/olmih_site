@@ -8,6 +8,7 @@ body {
 
 .main-container-custom-bg {
   background-color: #d3d3d3;
+
 }
 
 /* Custom CSS class for changing font color */
@@ -118,11 +119,10 @@ font-size: 49px;
 }
 
 .img-fluid-header {
-  width: 175px;
-  height: 175px;
+  width: 256px;
+  height: 256px;
   object-fit: contain;
   align-items: center;
-  mix-blend-mode: exclusion;
 }
 
 
