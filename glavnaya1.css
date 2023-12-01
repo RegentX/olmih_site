@@ -238,7 +238,7 @@ transform: matrix(1, -0.01, 0.01, 1, 0, 0);
 
 .custom-padding-from-quality {
   /* Паддинги для инсты, тг и часы работы  */
-  padding-left: 150px;
+  padding-left: 5rem;
   padding-top: 50px;
   font-family: 'Frank Ruhl', serif;
   font-style: normal;

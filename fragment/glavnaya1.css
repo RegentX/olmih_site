@@ -21,16 +21,12 @@ body {
   color: #333; /* White color for links */
   font-size: larger;
   letter-spacing: 1px;
-  /*padding-left: 60px;*/
-  /*padding-right: 60px;*/
 }
 
 .navbar.custom-bg-color-grey .nav-link {
   color: #fff; /* Dark grey color for links */
   font-size: x-large;
   letter-spacing: 2px;
-  /*padding-left: 55px;*/
-  /*padding-right: 55px;*/
   padding-top: 40px;
   padding-bottom: 40px;
   font-weight: 500;
@@ -249,12 +245,12 @@ transform: matrix(1, -0.01, 0.01, 1, 0, 0);
 
 .custom-padding-from-quality {
   /* Паддинги для инсты, тг и часы работы  */
-  padding-left: 150px;
-  padding-top: 50px;
+  padding-left: 100px;
+  padding-top: 30px;
   font-family: 'Frank Ruhl', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .header-working-hours-time {

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Олмих</title>
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./about_company.css" />
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+<section class="routing">
+  <div class="route-button-wrap">
+    <button class="route-button" onclick="window.location='main.html'">Главная</button>
+  </div>
+</section>
+<div class="mt-4">
+  <h3 class="h-custom-pad">О компании</h3>
+</div>
+<div class="mt-4">
+  <h3 class="h-custom-pad">Ремонт весов от компании ОЛМИХ - ваш бизнес в надежных руках!</h3>
+  <p class="custom-paragraph">
+    Основное направление деятельности компании является ремонт,
+    сервисное обслуживание и продажа весового оборудования всех ведущих
+    марок российского и зарубежного производства. У нас Вы можете
+    выбрать и купить весы более 4000 наименований.
+  </p>
+</div>
+
+<!-- List Section -->
+<div class="list-section">
+  <h3 class="h-custom-pad">Покупать продукцию у нас выгодно!</h3>
+  <ul class="ul-custom-pad">
+    <li>Работаем с 1995г</li>
+    <li>В ассортименте более 4000 товарных позиций</li>
+    <li>Большинство представленных в РФ торговых марок</li>
+    <li>
+      Работаем напрямую с производителями или генеральными диллерами от
+      производителей иностранцев;
+    </li>
+    <li>Более 50000 клиентов</li>
+    <li>
+      Производим проверку, калибровку, ремонт, и тех.обслуживание весов
+    </li>
+    <li>100 % гарантия</li>
+  </ul>
+</div>
+
+<div class="list-section">
+  <h3 class="h-custom-pad">Мы предлагаем:</h3>
+  <ul class="ul-custom-pad">
+    <li>Сертифицированную продукцию</li>
+    <li>Гарантию в течение одного года</li>
+    <li>Отличное качество</li>
+    <li>Низкие цены</li>
+    <li>Удобную и оперативную доставку в любой регион России</li>
+  </ul>
+</div>
+</div>
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
