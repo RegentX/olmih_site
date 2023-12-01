@@ -13,6 +13,17 @@
   /*padding-right: 60px;*/
 }
 
+.card-hover-effect {
+  transition: box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transition for the hover effect */
+}
+
+.card-hover-effect:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+  transform: scale(1.03); /* Slightly enlarges the card */
+}
+
+
+
 .navbar.custom-bg-color-grey .nav-link {
   color: #fff; /* Dark grey color for links */
   font-size: x-large;
