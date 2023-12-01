@@ -177,8 +177,13 @@ body {
 }
 
 #form-send-app {
-  background-color: #f6f6f6;
 }
+
+.custom-divider {
+  border-top: 1px solid #ccc; /* Adjust color and thickness */
+  margin-top: 15px; /* Adjust top margin */ /* Adjust bottom margin */
+}
+
 
 .form-mail-warn {
   text-align: center;
