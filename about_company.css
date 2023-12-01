@@ -12,3 +12,42 @@
     font-weight: 700;
     justify-content: center;
 }
+
+.h-custom-pad-about-company {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif, bold;
+    justify-content: center;
+}
+
+
+.custom-container {
+    width: 80%;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #A6CAFF 0%, rgba(135, 135, 135, 0.43) 100%);
+    border: 5px solid #8FBCFF;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.text-custom {
+    padding-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Inria Sans', serif;
+}
+
+.order-1, .order-2, .order-3, .sub-heading {
+    padding-left: 25px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Inria Sans', serif;
+}
+
+.row {
+    justify-content: space-between;
+}
