@@ -1,7 +1,9 @@
 /* custom.css */
 body {
   font-family: "Frank Ruhl", serif; /* Specify your font */
+  width: fit-content;
 }
+
 
 .main-container-custom-bg {
   background-color: #d3d3d3;
