@@ -1,0 +1,86 @@
+.route-button-wrap {
+    margin: 5% 0 0 5%;
+}
+
+.route-button {
+    width: 200px;
+    height: 4vh;
+    background: linear-gradient(180deg, rgba(150, 192, 255, 0.93) 0%, rgba(93, 93, 93, 0.11) 100%);
+    border: 1px solid #000000;
+    border-radius: 13px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.h-custom-pad-about-company {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif, bold;
+    justify-content: center;
+}
+
+
+.custom-container {
+    width: 80%;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #A6CAFF 0%, rgba(135, 135, 135, 0.43) 100%);
+    border: 5px solid #8FBCFF;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.text-custom {
+    padding-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Inria Sans', serif;
+}
+
+.order-1, .order-2, .order-3, .sub-heading {
+    padding-left: 25px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Inria Sans', serif;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.h-custom-pad {
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.ul-custom-pad {
+    padding-left: 67px;
+    font-size: 20px;
+}
+
+.custom-paragraph {
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.p-custom-pad {
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.custom-mt-4 {
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
