@@ -64,6 +64,25 @@ font-size: 49px;
   word-wrap: break-word;
 }
 
+.main-head-wrap {
+  background-color: #DBDDDE;
+}
+
+.row-main-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.text-object {
+  padding: 10px;
+  background-color: orange;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 /* Custom styles for card images to ensure they fill the container */
 .card-img-top {
   width: 100%; /* Force image to fill container */
@@ -104,10 +123,16 @@ font-size: 49px;
 
 .background-image {
   background-image: url("kartinkiglavnaya/-1@2x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 500px;
-  height: 300px; /* Картинка на бэке дива */
+  background-clip: content-box;
+  /* Картинка на бэке дива */
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes the container take the full viewport height */
+  text-align: center; /* Centers text within each div */
 }
 
 .b9 {
@@ -219,7 +244,6 @@ text-align: center;
   font-weight: bold;
   font-family: 'Roboto Slab', 'bold';
 }
-
 .header-between-info {
   /* Гарантия качества */
 
@@ -238,9 +262,8 @@ color: #0448d0;
 transform: matrix(1, -0.01, 0.01, 1, 0, 0);
 }
 
-.header-between-info p {
-  /* Гарантия качества */
-  margin-top: -20px;
+.container-fluid .py-3 .main-container-fluid-custom-bg .background-image {
+  height: fit-content;
 }
 
 .custom-padding-from-quality {
@@ -443,6 +466,7 @@ text-decoration-line: underline;
     display: none;
   }
 }
+/*new main header*/
 
 @media (max-width: 1255px) {  /* Applies styles for screens smaller than 1256px */
   .center-when-min {
