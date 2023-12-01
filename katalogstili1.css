@@ -158,6 +158,52 @@ body {
   font-family: 'Inconsolata',monospace;
 }
 
+.modal-dialog .modal-content {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.modal-dialog .modal-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-send {
+  margin: 5%;
+}
+
+.form-warn {
+  text-align: center;
+}
+
+#btn-send-app {
+  background-color: red;
+}
+
+#form-send-app {
+  background-color: #f6f6f6;
+}
+
+.form-mail-warn {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 0 0 0;
+}
+
+.form-phone {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/*for social sites icons */
+.header-social-icons {
+  /* Тг и инст */
+  font-weight: 300;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
 .order-button:hover {
   background-color: #4CAE4C;
 }
