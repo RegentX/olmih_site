@@ -1,6 +1,7 @@
 /* custom.css */
 body {
-  font-family: 'Inconsolata',monospace; /* Specify your font */
+    font-family: 'Inconsolata',monospace; /* Specify your font */
+    width: fit-content;
 }
 
 .main-container-custom-bg {
@@ -48,7 +49,7 @@ body {
 .card-title {
   color: #333;
   /* Ремонт Электронных весов */
-  font-family: 'Inconsolata',monospace;
+font-family: 'Inconsolata';
 font-style: normal;
 font-weight: 900;
 font-size: 49px;
@@ -241,7 +242,7 @@ transform: matrix(1, -0.01, 0.01, 1, 0, 0);
   /* Паддинги для инсты, тг и часы работы  */
   padding-left: 150px;
   padding-top: 50px;
-  font-family: 'Inconsolata',monospace;
+  font-family: 'Frank Ruhl', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -251,7 +252,7 @@ transform: matrix(1, -0.01, 0.01, 1, 0, 0);
   /* Часы работы с 9 до 15  */
   padding-top: 10px;
   font-size: x-large;
-  font-family: 'Inconsolata',monospace;
+  font-family: 'Frank Ruhl', serif;
 font-style: normal;
 font-weight: 400;
 }
@@ -273,14 +274,14 @@ font-weight: 400;
   font-size: 1.25rem; /* Звоните в рабочее время */
   font-weight: 500;
   letter-spacing: 1px;
-  font-family: 'Inconsolata',monospace;
+  font-family: 'Frank Ruhl', serif;
 }
 
 .header-phone-number {
   font-size: 1rem; /* Nomer telephona */
   font-weight: 500;
   letter-spacing: 2px;
-  font-family: 'Inconsolata',monospace;
+  font-family: 'Frank Ruhl', serif;
 }
 
 .header-contact-info p {
