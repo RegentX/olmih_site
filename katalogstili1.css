@@ -30,7 +30,7 @@ body {
   border-radius: 30px;
   overflow: auto;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  margin: 5% 10%;
+  margin: 2% 10% 5% 10%;
   background-color: #fff;
   align-items: stretch;
   padding: 2% 0;
@@ -56,6 +56,21 @@ body {
   text-align: center;
   font-family: 'Inconsolata', monospace;
   font-size: 2.5vh;
+}
+
+.route-button-wrap {
+  margin: 2% 0 0 10%;
+}
+
+.route-button {
+  width: max-content;
+  height: 7vh;
+  background: linear-gradient(180deg, rgba(150, 192, 255, 0.93) 0%, rgba(93, 93, 93, 0.11) 100%);
+  border: 1px solid #000000;
+  border-radius: 13px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  justify-content: center;
 }
 
 .product-image img {
@@ -148,6 +163,16 @@ body {
 }
 
 @media (max-width: 850px) {
+
+  .route-button-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 10% 10%;
+  }
+
+  .route-button {
+    width: max-content;
+  }
 
   .product-card {
     margin: 10% 10%;

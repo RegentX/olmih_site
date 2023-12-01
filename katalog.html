@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Catalog</title>
-  <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
@@ -18,72 +15,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg custom-bg-color">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name1">О компании</a>
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name2">Фотогалерея</a>
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name3">Обратная связь</a>
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name4">Доставка</a>
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name5">Контакты</a>
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name6">Статьи</a>
-      <a class="nav-item nav-link nav-link-custom-color-grey" href="#" id="top-header-name7">Наши клиенты</a>
-    </div>
-  </nav>
-  <div class="container-fluid py-3 main-container-custom-bg background-image">
-    <div class="row pt-3">
-      <div class="col-md-3 text-center center-when-min">
-        <img class="img-fluid-header" alt="" src="./kartinkiglavnaya/@2x.png" />
-        <h1 class="b9">ОЛМИХ</h1>
-      </div>
-      <div class="col-md-4 text-end custom-space hide-until-large">
-        <p class="header-end-text">Когда точность на первом месте!</p>
-        <p class="header-phone">Звоните в Рабочее Время</p>
-        <p class="header-phone-number">8 (495) 366-39-92</p>
-        <p class="header-phone-number">8 (910) 471-46-52</p>
-      </div>
-      <div class="header-between-info hide-until-large">
-        <p>Гарантия</p>
-        <p>Качества</p>
-        <p>100%</p>
-      </div>
-      <div class="col-md-3 text-start custom-padding-from-quality hide-until-large">
-        <div class="header-social-icons">
-          <span><i class="bi bi-instagram"></i> olmih.ru</span>
-        </div>
-        <div class="header-social-icons">
-          <span><i class="bi bi-telegram"></i> Nvdkd</span>
-        </div>
-        <div class="header-working-hours-time">
-          <span>Часы Работы:</span>
-        </div>
-        <div class="header-working-hours-time">
-          <span>с 9.00 до 15.00 по будням</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color-grey">
-      <div class="navbar-nav" id="nav-bar-low">
-        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name1"
-        >Каталог весов</a
-        >
-        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name2"
-        >Ремонт весов</a
-        >
-        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name3"
-        >Тех.обслуживание весов</a
-        >
-        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name4"
-        >Проверка весов</a
-        >
-        <a class="nav-item nav-link nav-link-custom-color" href="#" id="bottom-header-name5"
-        >Калибровка весов</a
-        >
-      </div>
-  </nav>
-</header>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
 <main>
+  <section class="routing">
+    <div class="route-button-wrap">
+      <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+  </section>
   <section class="product">
     <div class="product-card">
       <div class="product-header">
