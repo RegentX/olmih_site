@@ -2,6 +2,14 @@
 body {
     font-family: 'Inconsolata',monospace; /* Specify your font */
     width: fit-content;
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 2400px) {
+  .body {
+
+  }
 }
 
 .main-container-custom-bg {
@@ -334,10 +342,15 @@ font-weight: 400;
 }
 
 .custom-img-footer {
-  width: auto; /* Keep the image's aspect ratio */
-  height: auto; /* Adjust height as necessary */
+  width: 2rem; /* Keep the image's aspect ratio */
+  height: 2rem; /* Adjust height as necessary */
   max-width: none; /* Remove any maximum width restrictions */
   max-height: 150px; /* Example size, adjust as needed */
+}
+
+.img-fluid .custom-img-footer {
+  width: 2rem;
+  height: 2rem;
 }
 
 .custom-order-pad-2 {
