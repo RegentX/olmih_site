@@ -71,3 +71,8 @@
 .mt-4-padding {
     margin-left: 50px;
 }
+
+.mt-4-padding-bottom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
