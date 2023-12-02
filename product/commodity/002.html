@@ -6,6 +6,8 @@
   <title>Product Page</title>
   <!-- Link to Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
   <style>
     .product-card {
       border: 1px solid #ddd;
@@ -41,6 +43,35 @@
     .feature-value {
       width: 70%;
     }
+    .custom-container {
+      width: 80%;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #A6CAFF 0%, rgba(135, 135, 135, 0.43) 100%);
+      border: 5px solid #8FBCFF;
+      margin-top: 100px;
+      margin-bottom: 80px;
+    }
+
+    .text-custom {
+      padding-top: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Inria Sans', serif;
+    }
+
+    .order-1, .order-2, .order-3, .sub-heading {
+      padding-left: 25px;
+      margin-left: 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      font-family: 'Inria Sans', serif;
+    }
+
+    .row {
+      justify-content: space-between;
+    }
+
     /* Additional CSS to style the page as per the image goes here */
   </style>
 </head>
@@ -48,7 +79,7 @@
 <div id="header"></div>
 <script>
   document.addEventListener('DOMContentLoaded', function(){
-    fetch('fragment/header.html')
+    fetch("../../fragment/header.html")
             .then(response => response.text())
             .then(data => {
               document.getElementById('header').innerHTML = data;
@@ -59,16 +90,16 @@
 <div class="container my-5">
   <div class="row">
     <div class="col-md-12">
-      <h1>Весы электронные торговые ВТЭ-6</h1>
+      <h1>BLES-150ECO беспроводные</h1>
       <button onclick="window.history.back()" class="btn btn-primary">
-        <img src="kartinkitovar/image-38@2x.png" alt="Back" height="28" >
+        <img src="/kartinkitovar/image-38@2x.png" alt="Back" height="28" >
       </button>
-      <p class="lead">Весы торговые электронные ВТЭ-6 предназначены для взвешивания товаров в торговле, на предприятиях общественного питания, в медицинских учреждениях, в быту.</p>
+      <p class="lead">Весы бытовые платформенные BLES-150ECO беспроводные. Бюджетные товарные весы с торговыми функциями. Bluetooth соединение индикатора. </p>
     </div>
       <div class="col-md-4">
       <!-- Product Image and 3D view button -->
       <div class="product-image">
-        <img src="kartinkitovar/image-36@2x.png" alt="Product" class="img-fluid">
+        <img src="../productimage/img_11.png" alt="Product" class="img-fluid">
         <!-- 3D view button -->
         <!-- button class="btn btn-primary">3D View</button-->
       </div>
@@ -78,45 +109,30 @@
         <table class="table">
           <tbody>
           <tr>
-            <td class="feature-name">Предел взвешевания</td>
-            <td class="feature-value">6 кг</td>
+            <td class="feature-name">Предел взвешевания max</td>
+            <td class="feature-value">150 кг</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Предел взвешевания min</td>
+            <td class="feature-value">1000 г</td>
           </tr>
           <tr>
             <td class="feature-name">Точность</td>
-            <td class="feature-value">1/2 г</td>
+            <td class="feature-value">50 г</td>
           </tr>
           <tr>
-            <td class="feature-name">Размер платформы</td>
-            <td class="feature-value">209x209 мм</td>
+            <td class="feature-name">Размер платформы:</td>
+            <td class="feature-value">320x420 мм</td>
           </tr>
           <tr>
-            <td class="feature-name">Интерфейс</td>
-            <td class="feature-value">RS-232</td>
+            <td class="feature-name">Расположение дисплея</td>
+            <td class="feature-value">Беспроводное</td>
           </tr>
           <tr>
-            <td class="feature-name">Тип дисплея</td>
+            <td class="feature-name">Тип дисплея:</td>
             <td class="feature-value">LCD</td>
           </tr>
-          <tr>
-            <td class="feature-name">Внесен в госреестр РФ</td>
-            <td class="feature-value">Да</td>
-          </tr>
-          <tr>
-            <td class="feature-name">Проверка</td>
-            <td class="feature-value">Включена в стоимость</td>
-          </tr>
-          <tr>
-            <td class="feature-name">Крепление индикатора</td>
-            <td class="feature-value">На корпусе</td>
-          </tr>
-          <tr>
-            <td class="feature-name">Страна производства</td>
-            <td class="feature-value">Россия</td>
-          </tr>
-          <tr>
-            <td class="feature-name">Гарантия</td>
-            <td class="feature-value">1 год</td>
-          </tr>
+
           <!-- More rows as per your product specifications -->
           </tbody>
         </table>
@@ -125,8 +141,7 @@
     <div class="col-md-4">
       <div class="product-card">
         <h1 class="h3">Цена</h1>
-        <p>Product details...</p>
-        <div class="price">16 024 Руб.</div>
+        <div class="price">По запросу.</div>
         <button class="price-button">Заказать</button>
         <!-- Other product details -->
       </div>
@@ -134,27 +149,27 @@
   </div>
 </div>
 <!-- Downer Block - Start -->
-<div class="container-fluid bg-light mt-5 pt-4 pb-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Почему клиенты выбирают нас?</h2>
-        <p class="lead">Весы нашей компании - точный баланс вашего успеха.</p>
-      </div>
+<div class="container-fluid custom-container">
+  <h1 class="text-custom">"Весы нашей компании - точный баланс вашего успеха."</h1>
+  <h2 class="sub-heading">Почему клиенты выбирают нас?</h2>
+  <div class="row pt-3">
+    <div class="col-md-3 order-1">
+      <ul>
+        <li>Быстрые услуги</li>
+        <li>Гарантия на все оборудование</li>
+      </ul>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Быстрые услуги</h3>
-        <p>Быстрая доставка во все регионы.</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Гарантия на всё оборудование</h3>
-        <p>Профессиональная помощь в выборе.</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Широкий ассортимент</h3>
-        <p>Низкие цены.</p>
-      </div>
+    <div class="col-md-3 order-2">
+      <ul>
+        <li>Быстрая доставка во все регионы</li>
+        <li>Профессиональная помощь в выборе</li>
+      </ul>
+    </div>
+    <div class="col-md-3 order-3">
+      <ul>
+        <li>Широкий ассортимент</li>
+        <li>Низкие цены</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -162,7 +177,7 @@
 <div id="footer"></div>
 <script>
   document.addEventListener('DOMContentLoaded', function(){
-    fetch('..//../fragment/footer.html')
+    fetch('../../fragment/footer.html')
             .then(response => response.text())
             .then(data => {
               document.getElementById('footer').innerHTML = data;
