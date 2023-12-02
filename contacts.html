@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./about_company.css" />
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h3 class="h-custom-pad-about-company">Контакты</h3>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">На этой странице вы можете найти информацию о наших контактных данных.</h3>
+    <p class="custom-paragraph">
+        <b>Обратиться к нашим специалистам вы можете через электронную почту:</b>
+    </p>
+    <ul class="ul-custom-pad">
+        <li>
+            эл. почта: info@olmih.ru
+        </li>
+        <li>
+            отдел продаж: sale@olmih.ru
+        </li>
+        <li>
+            отдел доставки: dostavka@olmih.ru
+        </li>
+        <li>
+            тех.служба: teh@olmih.ru
+        </li>
+    </ul>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        <b>Позвонить нам вы можете по телефонам:</b>
+    </p>
+    <ul class="ul-custom-pad">
+        <li>
+            тел.: 8(495) 366-39-92 (многоканальный)
+        </li>
+        <li>
+            факс : 8(495) 365-19-16
+        </li>
+        <li>
+            8 (910) 471-46-52
+        </li>
+    </ul>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        <b>Вы желаете посетить наш офис лично, или сдать весы в ремонт, мы ждем по адресу:</b>
+    </p>
+    <p class="custom-paragraph">ООО "ОЛМИХ" г. Москва ул. Окружной проезд д. 18
+    </p>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        <b>GPRS координаты: </b>
+    </p>
+    <p class="custom-paragraph">55°47′10″N, 37°44′31″E 55.786065, 37.742016
+    </p>
+</div>
+<div class="custom-paragraph">
+    <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6ZEpgwsMxNovFPRxW_xpUaDMJh4XE7-L&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true" type="text/javascript"></script>
+</div>
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
