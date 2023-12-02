@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <style>
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .price {
+      font-size: 24px;
+      color: #333;
+    }
+    .price-button {
+      font-size: 18px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .table-responsive {
+      margin-top: 20px;
+    }
+    .table th, .table td {
+      border-top: none;
+    }
+    .table thead th {
+      border-bottom: 2px solid #dee2e6;
+    }
+    .feature-name {
+      width: 30%;
+    }
+    .feature-value {
+      width: 70%;
+    }
+    .custom-container {
+      width: 80%;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #A6CAFF 0%, rgba(135, 135, 135, 0.43) 100%);
+      border: 5px solid #8FBCFF;
+      margin-top: 100px;
+      margin-bottom: 80px;
+    }
+
+    .text-custom {
+      padding-top: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Inria Sans', serif;
+    }
+
+    .order-1, .order-2, .order-3, .sub-heading {
+      padding-left: 25px;
+      margin-left: 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      font-family: 'Inria Sans', serif;
+    }
+
+    .row {
+      justify-content: space-between;
+    }
+
+    /* Additional CSS to style the page as per the image goes here */
+  </style>
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch("../../fragment/header.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>МВК-Л-30</h1>
+      <button onclick="window.history.back()" class="btn btn-primary">
+        <img src="/kartinkitovar/image-38@2x.png" alt="Back" height="28" >
+      </button>
+      <p class="lead">Крановые весы серии МВК-Л – надежные весы, предназначенные для статического взвешивания различных грузов.</p>
+    </div>
+      <div class="col-md-4">
+      <!-- Product Image and 3D view button -->
+      <div class="product-image">
+        <img src="../productimage/img_29.png" alt="Product" class="img-fluid">
+        <!-- 3D view button -->
+        <!-- button class="btn btn-primary">3D View</button-->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+          <tr>
+            <td class="feature-name">Предел взвешевания max</td>
+            <td class="feature-value">30 кг</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Предел взвешевания min</td>
+            <td class="feature-value">0.2 кг</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Точность</td>
+            <td class="feature-value">10г</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Температурный диапазон</td>
+            <td class="feature-value">-10...+40°C</td>
+          </tr>
+          <tr>
+            <td class="feature-name">Пылевлагозащита</td>
+            <td class="feature-value">IP54</td>
+          </tr>
+
+
+          <!-- More rows as per your product specifications -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card">
+        <h1 class="h3">Цена</h1>
+        <div class="price">По запросу.</div>
+        <button class="price-button">Заказать</button>
+        <!-- Other product details -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Downer Block - Start -->
+<div class="container-fluid custom-container">
+  <h1 class="text-custom">"Весы нашей компании - точный баланс вашего успеха."</h1>
+  <h2 class="sub-heading">Почему клиенты выбирают нас?</h2>
+  <div class="row pt-3">
+    <div class="col-md-3 order-1">
+      <ul>
+        <li>Быстрые услуги</li>
+        <li>Гарантия на все оборудование</li>
+      </ul>
+    </div>
+    <div class="col-md-3 order-2">
+      <ul>
+        <li>Быстрая доставка во все регионы</li>
+        <li>Профессиональная помощь в выборе</li>
+      </ul>
+    </div>
+    <div class="col-md-3 order-3">
+      <ul>
+        <li>Широкий ассортимент</li>
+        <li>Низкие цены</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Downer Block - End -->
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../../fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+<!-- Link to Bootstrap JS and its dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
