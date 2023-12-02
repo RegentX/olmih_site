@@ -15,8 +15,8 @@
 
 .h-custom-pad-about-company {
     font-style: normal;
-    font-weight: 500;
-    font-size: 65px;
+    font-weight: bold;
+    font-size: 40px;
     display: flex;
     font-family: 'Frank Ruhl Libre', serif, bold;
     justify-content: center;
@@ -52,6 +52,22 @@
     justify-content: space-between;
 }
 
+.p-custom-pad {
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.custom-mt-4 {
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
 .mt-4 {
     margin-right: 50px;
+}
+
+.mt-4-padding {
+    margin-left: 50px;
 }

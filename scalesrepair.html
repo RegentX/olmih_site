@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./scalesrepair.css" />
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+        }
+        .td-custom {
+            font-weight: bold;
+        }
+        .table-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h4 class="h-custom-pad-about-company">Ремонт весов</h4>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">Три признака, по которым можно определить, что весы необходимо сдать в ремонт:</h3>
+    <ul class="ul-custom-pad">
+        <li>
+            Весы не включаются
+        </li>
+        <li>
+            При взвешивании эталонной гири не соответствует вес
+        </li>
+        <li>
+            Из корпуса весов торчат провода и электронное табло показывает только наполовину, а на кнопки весов невозможно нажать, так как их вовсе нет...))))
+        </li>
+    </ul>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Любая техника в определенное время выходит из строя.
+        Для того, чтобы поправить ситуацию, необходимо сдать весы в ремонт.
+        Мы умеем ремонтировать весы <b>электронные</b>,  <b>механические</b>, <b>торговые</b>, <b>лабораторные</b>,  <b>настольные</b>,
+        <b>напольные</b>,  <b>товарные</b>, <b>крановые</b>, <b>складские</b>, <b>автомобильные</b>, и др.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad"><b>Ремонт весов</b> проводится у нас квалифицированными специалистами, которые
+        с помощью оснащенной техники предложат вам лучшие решения для ремонта любой сложности.
+        Мы даем гарантию на свою работу, поэтому можете смело доверять нам свои товары. </p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Проблемы могут быть самые разные, но чаще всего встречается нарушение в точности меры.
+        <b>Ремонт электронных весов</b> необходим тогда, когда сбиваются показатели, или не видна точная цифра.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Кроме того, мы производим <b>ремонт</b> и мелких деталей, аксессуаров известных отечественных и
+        зарубежных производителей марок весов. Расходные материалы, запчасти мы устанавливаем во время
+        ремонта самостоятельно, вам не придется доплачивать отдельно.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Нашими работниками производится и <b>ремонт напольных весов</b>.
+        Эта категория очень важна для продовольственных магазинов, для различных складов или например пунктов приема металла.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Маленькие отклонения и неточности могут привести к серьезным нарушениям,
+        а также к потере финансов. <b>Точный и своевременный ремонт – гарантия вашего успеха</b>.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad"><b>Ремонт и обслуживание весов</b> нами производится профессионально, на высоком уровне.
+        Чтобы не терять время и не испортить весы самостоятельным ремонтом,
+        обращайтесь сразу к специалистам. Благодаря труду наших сотрудников, вы сможете еще
+        долгое время пользоваться весами, если конечно будете соблюдать правила эксплуатации.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad"><b>Настольные весы</b> – часть необходимых материалов для таких работников, как врачи, повара,
+        различные мелкие предприятия. Ошибаться в цифрах нельзя.
+        Поэтому, если вам необходим <b>ремонт настольных весов</b>, не откладывайте это.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Таким образом, если вас интересует <b>ремонт весов в Москве</b>,
+        тогда обращайтесь <a href="contacts.html">к нам на сайт</a>, и мы с удовольствием поможем  решить вашу проблему.</p>
+</div>
+<div class="mt-4 mt-4-padding">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yWslIz1CarY"
+            title="Набор инструментов для ремонта весов" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Уверены, что даже самые сложные ситуации вы можете нам доверить,
+        так как благодаря оснащенности и опыту мы умеем ремонтировать <b>любые весы</b>. </p>
+</div>
+
+
+<div class="mt-5">
+    <h3 class="h-custom-pad">Различают три вида ремонта:</h3>
+    <div class="table-container">
+        <table>
+            <tr>
+                <td> </td>
+                <td>НАЗВАНИЕ РЕМОНТА</td>
+                <td>ИНФОРМАЦИЯ</td>
+                <td>СТОИМОСТЬ РАБОТ</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>ПЕРВАЯ КАТЕГОРИЯ</td>
+                <td>Устранение мелких неисправностей (обрыв кабеля, замена кнопок или клавиатуры, замена блоков питания, и т.д.).
+                    Стоимость указана без учета стоимости запасных частей.</td>
+                <td class="td-custom">600 руб</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>ВТОРАЯ КАТЕГОРИЯ</td>
+                <td>Устранение поломок связанных с восстановлением проводящих дорожек, контактов разъема и т.д. .
+                    Причина таких поломок – попадание в весы посторонних предметов или жидкостей.
+                    Стоимость указана без учета стоимости запасных частей.</td>
+                <td class="td-custom">1800 руб</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>ТРЕТЬЯ КАТЕГОРИЯ</td>
+                <td>Устранение поломок связанных с восстановлением электрических схем, плат и т.д.
+                    Причиной поломки может бить физическое воздействие на агрегаты и терминалы весового оборудования.
+                    Стоимость указана без учета стоимости запасных частей.</td>
+                <td class="td-custom">2600 руб</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Также, о стоимости ремонта Вы можете проконсультироваться у наших менеджеров
+        <a href="contacts.html">по телефонам и электронной почте</a>, размещенной на нашем сайте.</p>
+</div>
+
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
