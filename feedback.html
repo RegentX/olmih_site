@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./feedback.css" />
+    <style>
+        form {
+            max-width: 300px;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: linear-gradient(180deg, #8BB8FC 0%, rgba(27, 90, 255, 0.21) 100%);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(50.43deg, #2E75FF -43.51%, rgba(157, 222, 255, 0.71182) 48.17%);
+        }
+    </style>
+
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h3 class="h-custom-pad-about-company">Обратная связь</h3>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">На этой странице вы можете обратиться в нашу компанию при помощи формы обратной связи.</h3>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">Пожалуйста, внимательно заполните все строки формы - это позволит нашим коллегам оперативно связаться с Вами и помочь в решении проблемы.</h3>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">После отправки сообщения в течении 30 минут с Вами свяжутся сотрудники компании "ОЛМИХ".</h3>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">Спасибо, за обращение в нашу компанию!</h3>
+</div>
+<form id="contactForm">
+    <label for="fullName">Фамилия Имя Отчество *:</label><br>
+    <input type="text" id="fullName" name="fullName" required placeholder="Введите ваше полное имя"><br>
+    <label for="phone">Телефон *:</label><br>
+    <input type="tel" id="phone" name="phone" required placeholder="Введите ваш телефон"><br>
+    <label for="email">E-mail *:</label><br>
+    <input type="email" id="email" name="email" required placeholder="Введите ваш E-mail"><br>
+    <label for="message">Ваше сообщение *:</label><br>
+    <textarea id="message" name="message" required placeholder="Введите ваше сообщение"></textarea><br>
+    <input type="submit" value="Отправить">
+    <p>* - поля обязательные для заполнения</p>
+</form>
+
+
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('contactForm').onsubmit = function(event) {
+        // Front-end validation checks
+        var fullName = document.getElementById('fullName').value;
+        if(fullName === '') {
+            alert('Пожалуйста, введите Фамилию Имя Отчество.');
+            event.preventDefault();
+            return false;
+        }
+
+        var phone = document.getElementById('phone').value;
+        if(phone === '') {
+            alert('Пожалуйста, введите ваш телефон.');
+            event.preventDefault();
+            return false;
+        }
+
+        var email = document.getElementById('email').value;
+        if(email === '') {
+            alert('Пожалуйста, введите ваш E-mail.');
+            event.preventDefault();
+            return false;
+        }
+
+        var message = document.getElementById('message').value;
+        if(message === '') {
+            alert('Пожалуйста, введите ваше сообщение.');
+            event.preventDefault();
+            return false;
+        }
+
+        // This will open the user's email client
+        this.action = "mailto:" + email + "?subject=Contact Form Submission&body=" + message;
+    };
+</script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const fullName = document.getElementById('fullName').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if(email) {
+            const subject = encodeURIComponent("Обратная связь от " + fullName);
+            const body = encodeURIComponent(`Имя: ${fullName}\nТелефон: ${phone}\nПочта: ${email}\nСообщение: ${message}`);
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@olmih.ruu&su=${subject}&body=${body}`, '_blank');
+        } else {
+            alert("Пожалуйста, введите корректный адрес электронной почты.");
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
