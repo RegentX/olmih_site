@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих - Проверка весов</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./checkscales.css" />
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h3 class="h-custom-pad-about-company">Проверка весов</h3>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        С 01 января 2013 года в соответствии с Постановление Правительства РФ № 250 поверка средств измерений
+        массы осуществляется аккредитованными в установленном порядке в области обеспечения единства измерений
+        государственными центрами метрологии.
+    </p>
+    <p class="custom-paragraph">
+        <b>ООО "ОЛМИХ" организует все работы по поверке весового оборудования совместно с такими центами как:</b>
+    </p>
+    <ul class="ul-custom-pad">
+        <li>
+            ФБУ "РОСТЕСТ-МОСКВА"
+        </li>
+        <li>
+            "ФИЗТЕХ-С"
+        </li>
+        <li>
+            ФБУ "ЦСМ Московской области"
+        </li>
+    </ul>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        <b>Существует два вида поверки весов:</b>
+    </p>
+    <ul class="ul-custom-pad">
+        <li>
+            <b>Первичная</b> - производится при выпуске весов (гирь) из производства.
+        </li>
+        <li>
+            <b>Периодическая</b> - ей подлежат весы (гири), находящиеся в эксплуатации, периодичность такой поверки - 1 раз в год.
+        </li>
+    </ul>
+</div>
+<div class="mt-4 mt-4-padding-bottom">
+    <p class="custom-paragraph"><b>После необходимой подготовки производится поверка весов.
+            В итоге Вы получаете годные к эксплуатации весы и Вам не нужно тратить свое время на поездку в
+            уполномоченный метрологический орган, который может забраковать Ваши весы из-за несоответствия
+        требуемым метрологическим характеристикам и другим параметрам, включая внешний вид</b>.
+    </p>
+</div>
+<div class="mt-4 mt-4-padding-bottom">
+    <p class="custom-paragraph">Положительные результаты поверки средств измерений
+        удостоверяются поверительным клеймом и свидетельством о поверке.
+    </p>
+</div>
+<div class="mt-4 mt-4-padding-bottom">
+    <p class="custom-paragraph"><a href="./checkprice.html">Стоимость проверки</a>
+    </p>
+</div>
+<div class="mt-4 mt-4-padding-bottom">
+    <p class="custom-paragraph"><b>Обратитесь к нам по <a href="./contacts.html">контактной информации</a> и
+        менеджеры нашей компании оперативно помогут Вам решении проблемы</b>.
+    </p>
+</div>
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

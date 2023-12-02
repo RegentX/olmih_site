@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих - Техническое обслуживание весов</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./techservice.css" />
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h3 class="h-custom-pad-about-company">Техническое обслуживание весов</h3>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">Для чего необходимо проводить работы по техническому обслуживанию весов?</h3>
+    <p class="custom-paragraph">
+        Весы уже давно перестали быть простейшими механизмами в производственном процессе.
+        Современные весы умеют дозировать, фасовать, сортировать продукцию изготовителя,
+        но основная их функция - определять вес товара или сырья. В цикличном ритме работы
+        предприятия техническое обслуживание весов приобретает важное значение, т.к. остановка процесса
+        производства, для ремонта оборудования, влечёт за собой снижение производительности и уменьшения
+        прибыли для предпринимателя. Работы по техническому обслуживанию весов снижают затраты на дорогостоящий
+        ремонт и помогают диагностировать оборудование в процессе эксплуатации.
+    </p>
+    <p class="custom-paragraph">
+        <b>Выделяют несколько периодов планового технического обслуживания:</b>
+    </p>
+    <ul class="ul-custom-pad">
+        <li>
+            Ежемесячное техническое обслуживание
+        </li>
+        <li>
+            Ежеквартальное техническое обслуживание
+        </li>
+        <li>
+            Полугодовое техническое обслуживание
+        </li>
+        <li>
+            Годовое техническое обслуживание
+        </li>
+    </ul>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        Каждый клиент нашей компании получает индивидуальный график технического обслуживания весов.
+    </p>
+    <p class="custom-paragraph">
+        <b>Перечень работ по техническому обслуживанию весов:</b>
+    </p>
+    <ul class="ul-custom-pad">
+        <li>
+            Внешний осмотр (для обнаружения повреждений птатформы и рамы конструкции крепления весового механизма)
+        </li>
+        <li>
+            Регулировка и установка весовой платформы по уровню
+        </li>
+        <li>
+            Визуальный осмотр целостности соединительного кабеля платформы и терминала
+        </li>
+        <li>
+            Диагностика системы питания весов
+        </li>
+        <li>
+            Проверка работоспособности основного терминала весов (проверка параметров настройки)
+        </li>
+        <li>
+            Очистка терминала и платформы от загрязнений
+        </li>
+        <li>
+            Проверка весов эталонными грузами на точность показаний.
+        </li>
+        <li>
+            Производить юистировку весов (при необходимости, сброс настроек параметров весов
+            и ввод констант согласно технической документации к данным весам)
+        </li>
+    </ul>
+</div>
+<div class="mt-4 mt-4-padding-bottom">
+    <p class="custom-paragraph">
+        <b>Для более точной информации и стоимости работ по техническому обслуживанию
+            весов позвоните по телефону: <b>8(495) 366-39-92</b>,
+            или отправьте электронную заявку по адресу: <b>info@olmih.ru</b></b>
+    </p>
+</div>
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
