@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Олмих</title>
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./articles.css" />
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+<section class="routing">
+  <div class="route-button-wrap">
+    <button class="route-button" onclick="window.location='main.html'">Главная</button>
+  </div>
+</section>
+<div class="mt-4">
+  <h4 class="h-custom-pad-about-company">Статьи о весах, ремонте весов и интересных фактах в мире весового оборудования</h4>
+</div>
+<div class="mt-4">
+  <p class="custom-paragraph">
+    <b>Предлагаем вам статьи, заметки, по ремонту весов и сопутствующего оборудования. Все статьи оригинальны, поэтому, использование или копирование и публикация статей на других ресурсах будет расценено  как плогиат и воровство!
+      Если вы желаете разместить свой материал на наших страницах, обращайтесь через электронную почту компании <b><u>info@olmih.ru</u></b>. Ваша заявка будет рассмотрена в течении 2-3 рабочих дней.</b>
+  </p>
+</div>
+<div class="mt-4">
+  <p class="custom-paragraph">
+    <b><a href="./articlespdf/Remontvesov3.pdf.pdf" target="_blank">Ремонт весов</a></b>
+  </p>
+</div>
+<div class="mt-4">
+  <p class="custom-paragraph">
+    <b><a href="./articlespdf/Tehnicheskoeobslujivanievesov3.pdf.pdf" target="_blank">Техническое обслуживание весового оборудования</a></b>
+  </p>
+</div>
+<div class="mt-4">
+  <p class="custom-paragraph">
+    <b><a href="./articlespdf/vyborvesov3.pdf" target="_blank">Выбор весов для открытия магазина</a></b>
+  </p>
+</div>
+<div class="mt-4">
+  <p class="custom-paragraph">
+    <b><a href="./articlespdf/modernizaciyavesov3.pdf" target="_blank">Модернизация автомобильных весов</a></b>
+  </p>
+</div>
+<div class="mt-4">
+  <p class="custom-paragraph">
+    <b><a href="./articlespdf/Kalibrovkavesov.docx" target="_blank">Калибровка весов</a></b>
+  </p>
+</div>
+<div class="mt-4 custom-mt-4">
+  <p class="custom-paragraph">
+    <b><a href="./articlespdf/kakpochinit.pdf" target="_blank">Как починить обрыв провода</a></b>
+  </p>
+</div>
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
