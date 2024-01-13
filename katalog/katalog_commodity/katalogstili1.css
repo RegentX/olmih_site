@@ -30,12 +30,19 @@ body {
   background-color: #fff;
   align-items: stretch;
   padding: 2% 0;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform */
 }
+
+.product-card:hover {
+  transform: scale(1.05); /* Increase the size by 5% */
+}
+
+
 
 .product-body {
   display: flex;
   justify-content: center; /* Aligns children to the start of the parent element */
-  align-items: center; /* Centers children vertically within the parent element */
+  align-items: center; /* Centers children vexrtically within the parent element */
   flex-wrap: wrap;
   width: 100%;
   height: auto;
@@ -52,6 +59,7 @@ body {
   text-align: center;
   font-family: 'Inconsolata', monospace;
   font-size: 2.5vh;
+  font-weight: bold;
 }
 
 .route-button-wrap {
@@ -75,6 +83,11 @@ body {
 }
 
 #vesy1 {
+  width: 100%;
+  margin: auto;
+}
+
+#vesy2 {
   width: 100%;
   margin: auto;
 }

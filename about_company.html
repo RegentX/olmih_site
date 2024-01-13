@@ -16,13 +16,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="./about_company.css" />
+  <link rel="stylesheet" href="/about_company.css" />
 </head>
 <body>
 <div id="header"></div>
 <script>
   document.addEventListener('DOMContentLoaded', function(){
-    fetch('fragment/header.html')
+    fetch('/fragment/header.html')
             .then(response => response.text())
             .then(data => {
               document.getElementById('header').innerHTML = data;
@@ -111,7 +111,7 @@
 <div id="footer"></div>
 <script>
   document.addEventListener('DOMContentLoaded', function(){
-    fetch('fragment/footer.html')
+    fetch('/fragment/footer.html')
             .then(response => response.text())
             .then(data => {
               document.getElementById('footer').innerHTML = data;
