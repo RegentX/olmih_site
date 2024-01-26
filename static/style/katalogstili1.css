@@ -41,6 +41,15 @@ body {
   height: auto;
 }
 
+.click-product-body {
+  display: flex;
+  justify-content: center; /* Aligns children to the start of the parent element */
+  align-items: center; /* Centers children vertically within the parent element */
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+}
+
 .product-header {
   display: flex;
   justify-content: center; /* Horizontally center content */
@@ -94,13 +103,13 @@ body {
   /* Adjusts children spacing */
   overflow: auto; /* Adds scrollbar if content overflows */
   height: 100%;
-  width: 40%;
+  width: 45%;
   font-family: 'Inria Serif',monospace;
 }
 
 .product-sale {
   padding: 2% 2% 2% 2%;
-  width: 25%;
+  width: 20%;
   /*justify-content: center; !* Horizontally center all children *!*/
   /*align-items: center;*/
 }
@@ -233,10 +242,7 @@ body {
     width: 100%; /* Sets width of each child to full container width */
   }
 
-  #vesy1 {
-    width:85%; /* Ensures image takes full width */
-    height: auto; /* Maintains aspect ratio */
-  }
+
 
   .product-details {
     padding: 0 10% 0 10%;

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Олмих - Каталог весов</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../static/style/katalogstili1.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../static/fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+<main>
+  <section class="routing">
+    <div class="route-button-wrap">
+      <button class="route-button" onclick="window.location='..//main.html'">Главная</button>
+    </div>
+  </section>
+  <section class="product">
+    <h1 style="text-align: center;">ВЕСЫ  ДОМАШНИЕ</h1>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">ИНГРИДИЕНТ ЕНА501 (100г/0,01г)</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/001.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 0.1 кг<br>
+              Точность: 0.01 г<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">M-68S MIRROR</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/002.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_1.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания: 0.1 кг<br>
+              Точность: 0.01 г<br>
+
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">YA102</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/003.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_2.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания : от 0.1 до 0.5 кг<br>
+              Точность: 0.01 г<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">HJ-150</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/004.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_3.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания : 150г<br>
+              Точность: 0.1 г<br>
+              Размер платформы: 60x64 мм<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">CR221</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/006.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_5.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания : 0.22 кг<br>
+              Точность: 0.1 г<br>
+              Размер платформы: 205x140 мм<br>
+                Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">Высокоточные порционные весы M-ETP FLAT</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/005.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_4.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 0.2/2 кг<br>
+              Предел взвешевания min: 0.2/2 г<br>
+              Точность: 0.01/0.1 г<br>
+              Размер платформы: 100x100 мм<br>
+              Источник питания: Батарейки<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">CX221</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/007.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_6.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 0.22 кг<br>
+              Точность: 0.1 г<br>
+              Размер платформы: 128x142 мм<br>
+              Тип дисплея: LCD<br>
+                Источник питания: Батарейки, Сеть 220<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">RE-260</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/008.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_7.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания : 250 г<br>
+              Точность: 0.05 г<br>
+              Размер платформы: 62x72 мм<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">HT-300</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/009.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_8.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 0.3 кг<br>
+              Предел взвешевания min: 2 г<br>
+              Точность: 0.1 г<br>
+              Размер платформы: 132x130 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">ЕК 9270 «ДАЧНИК»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/household/010.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_9.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 5 кг<br>
+              Точность: 1 г<br>
+              Размер платформы: 132x130 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Repeat for other products -->
+</main>
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../static/fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch("../../static/salewindow.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('modal').innerHTML = data;
+            });
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var recipient = button.data('whatever'); // Extract info from data-* attributes
+
+    var modal = $(this);
+    //modal.find('#vesy-name').text(recipient); // Update the input field's value
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

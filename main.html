@@ -22,7 +22,7 @@
   <div id="header"></div>
   <script>
     document.addEventListener('DOMContentLoaded', function(){
-      fetch('fragment/header.html')
+      fetch('static/fragment/header.html')
               .then(response => response.text())
               .then(data => {
                 document.getElementById('header').innerHTML = data;
@@ -34,7 +34,7 @@
         <div class="col-md-4 mb-3">
           <div class="card h-100 card-hover-effect" role="button" id="clickableCard1">
             <div class="card-body">
-              <h5 class="card-title">Ремонт Крановых Весов</h5>
+              <h5 class="card-title">Крановые Весы</h5>
             </div>
             <img
               src="./kartinkiglavnaya/image-15@2x.png"
@@ -46,10 +46,10 @@
         <div class="col-md-4 mb-3">
           <div class="card h-100 card-hover-effect" role="button" id="clickableCard2">
             <div class="card-body">
-              <h5 class="card-title">Ремонт Электронных Весов</h5>
+              <h5 class="card-title">Лабараторные Весы</h5>
             </div>
             <img
-              src="./kartinkiglavnaya/image-16@2x.png"
+              src="./kartinkiglavnaya/lab.png"
               class="card-img-top"
               alt="Крановые Весы"
             />
@@ -58,7 +58,7 @@
         <div class="col-md-4 mb-3">
           <div class="card h-100 card-hover-effect" role="button" id="clickableCard3">
             <div class="card-body">
-              <h5 class="card-title">Ремонт Авто-весов</h5>
+              <h5 class="card-title">Запчасти для Весов</h5>
             </div>
             <img
               src="./kartinkiglavnaya/image-18@2x.png"
@@ -192,7 +192,7 @@
   <div id="footer"></div>
   <script>
     document.addEventListener('DOMContentLoaded', function(){
-      fetch('fragment/footer.html')
+      fetch('static/fragment/footer.html')
               .then(response => response.text())
               .then(data => {
                 document.getElementById('footer').innerHTML = data;
@@ -202,13 +202,13 @@
   <script>
     document.getElementById('clickableCard1').addEventListener('click', function() {
       // Place your action here
-      window.location = '/katalog.html';
+      window.location = 'catalog/crane-catalog.html';
     });
   </script>
   <script>
     document.getElementById('clickableCard2').addEventListener('click', function() {
       // Place your action here
-      window.location = '/katalog.html';
+      window.location = 'catalog/lab-catalog.html'
     });
   </script>
   <script>
@@ -220,19 +220,19 @@
   <script>
     document.getElementById('clickableCard4').addEventListener('click', function() {
       // Place your action here
-      window.location = '/katalog.html';
+      window.location = 'catalog/household-catalog.html';
     });
   </script>
   <script>
     document.getElementById('clickableCard5').addEventListener('click', function() {
       // Place your action here
-      window.location = '/katalog.html';
+      window.location = '/catalog/commodity-catalog.html';
     });
   </script>
   <script>
     document.getElementById('clickableCard6').addEventListener('click', function() {
       // Place your action here
-      window.location = '/katalog.html';
+      window.location = '/catalog/trading-catalog.html';
     });
   </script>
 

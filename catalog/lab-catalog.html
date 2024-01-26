@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Олмих - Каталог весов</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../static/style/katalogstili1.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../static/fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+<main>
+  <section class="routing">
+    <div class="route-button-wrap">
+      <button class="route-button" onclick="window.location='..//main.html'">Главная</button>
+    </div>
+  </section>
+  <section class="product">
+    <h1 style="text-align: center;">ВЕСЫ ЛАБАРАТОРНЫЕ</h1>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">122ACFJR-150.005 LCD «Accurate»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/001.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_33.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 150 г<br>
+              Предел взвешевания min: 0.1 г<br>
+              Точность: 0.005 г<br>
+              Размер платформы: Ø 123 мм<br>
+              Калибровочная масса: 100 гF2<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">ВК-300</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/002.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_34.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 300 г<br>
+              Предел взвешевания min: 0.1 г<br>
+              Точность: 0.005 г<br>
+              Размер платформы: Ø 120 мм<br>
+              Калибровочная гиря: 200 гF2<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">ВК-600</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/003.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_34.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 600 г<br>
+              Предел взвешевания min: 0.5 г<br>
+              Точность: 0.01 г<br>
+              Размер платформы: Ø 120 мм<br>
+              Калибровочная гиря: 500 гF2<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">122ACF-1500.05 LCD «Accurate»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/004.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_35.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 1500 кг<br>
+              Точность: 0.05 г<br>
+              Размер платформы: 180x140 мм<br>
+                Калибровочная гиря: 1 кгF2<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">Микровесы AND ВМ-22</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/006.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_36.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 22 г<br>
+              Предел взвешевания min: 0.00001 г<br>
+              Точность: 0.000001 г<br>
+              Размер платформы: Ø25 мм<br>
+              Калибровочная гиря: Встроенная<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">122ACF-3000.05 LCD «Accurate»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/005.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_35.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 3000 г<br>
+              Точность: 0.05 г<br>
+              Размер платформы: 180x140 мм<br>
+              Калибровочная гиря: 2 кгF2<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">Микровесы AND ВМ-252</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/007.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_36.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 250 кг<br>
+              Предел взвешевания min: 0.00001 г<br>
+              Точность: 0.00001 г<br>
+              Размер платформы: Ø90 мм<br>
+              Калибровочная гиря: Встроенная<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">DA-125DC</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/008.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_37.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 12/120 г<br>
+              Предел взвешевания min: 0.001 г<br>
+              Точность: 0.00001 г<br>
+              Размер платформы: Ø80 мм<br>
+              Калибровочная гиря: Встроенная<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">DA-65DC</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/009.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_37.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 62 г<br>
+              Предел взвешевания min: 0.001 г<br>
+              Точность: 0.00001 г<br>
+              Размер платформы: Ø80 мм<br>
+              Калибровочная гиря: Встроенная<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">DL-63</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/lab/010.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_38.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 60 г<br>
+              Предел взвешевания min: 0.02 г<br>
+              Точность: 0.001 г<br>
+              Размер платформы: Ø80 мм<br>
+              Калибровочная гиря: 50гF2<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Repeat for other products -->
+</main>
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../static/fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch("../../static/salewindow.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('modal').innerHTML = data;
+            });
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var recipient = button.data('whatever'); // Extract info from data-* attributes
+
+    var modal = $(this);
+    //modal.find('#vesy-name').text(recipient); // Update the input field's value
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

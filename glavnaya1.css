@@ -60,7 +60,7 @@
 font-family: 'Inconsolata';
 font-style: normal;
 font-weight: 900;
-font-size: 49px;
+font-size: 45px;
 }
 
 .custom-container {
@@ -70,13 +70,13 @@ font-size: 49px;
 /* Custom styles for card images to ensure they fill the container */
 .card-img-top {
   width: 100%; /* Force image to fill container */
-  height: 400px; /* Set a fixed height, or use 'auto' if all images have the same aspect ratio */
+  height: 58%; /* Set a fixed height, or use 'auto' if all images have the same aspect ratio */
   object-fit: cover; /* This will cover the area without stretching the image */
 }
 
 .card-img-top-second {
   width: 100%; /* Force image to fill container */
-  height: 400px; /* Set a fixed height, or use 'auto' if all images have the same aspect ratio */
+  height: 58%; /* Set a fixed height, or use 'auto' if all images have the same aspect ratio */
   object-fit:contain; /* This will cover the area without stretching the image */
 }
 

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Олмих - Каталог весов</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../static/style/katalogstili1.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../static/fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  });
+</script>
+<main>
+  <section class="routing">
+    <div class="route-button-wrap">
+      <button class="route-button" onclick="window.location='..//main.html'">Главная</button>
+    </div>
+  </section>
+  <section class="product">
+    <h1 style="text-align: center;">ВЕСЫ ТОРГОВЫЕ</h1>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">МТ 15 МЖА (2/5; 300x235) «Алтын Тарази Т»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/001.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_20.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 15 кг<br>
+              Предел взвешевания min: 40 г<br>
+              Точность: 2/5 г<br>
+              Размер платформы: 235x300 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">ВСП-30.2-3ТК Ладога»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/002.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_21.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 30 кг<br>
+              Предел взвешевания min: 100 г<br>
+              Точность: 5/10 г<br>
+              Размер платформы: 220x310 мм<br>
+              Тип дисплея: LED<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">ACS-809</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/003.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_22.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 32 кг<br>
+              Предел взвешевания min: 100 г<br>
+              Точность: 5 г<br>
+              Размер платформы: 230x340 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">DECS-40 беспроводные</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/004.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_23.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 40 кг<br>
+              Предел взвешевания min: 100 г<br>
+              Точность: 2 г<br>
+              Размер платформы: 230x340 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">МТ 6 МЖА (1/2; 300x235) «Алтын Тарази»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/006.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_20.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 6 кг<br>
+              Предел взвешевания min: 20 г<br>
+              Точность: 1/2 г<br>
+              Размер платформы: 238x300 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">DH-601</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/005.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_24.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 40 кг<br>
+              Предел взвешевания min: 100 г<br>
+              Точность: 5 г<br>
+              Размер платформы: 230x330 мм<br>
+              Тип дисплея: LCD<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">МТ 6 МДА (1/2; 300x235) «Алтын Тарази»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/007.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_25.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 6 кг<br>
+              Предел взвешевания min: 20 г<br>
+              Точность: 1/2 г<br>
+              Размер платформы: 235x300 мм<br>
+              Тип дисплея: LED<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">Весы торговые
+          МТ 6 МДА (1/2; 230x330) «Базар 2у</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/008.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_26.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 6 кг<br>
+              Предел взвешевания min: 20 г<br>
+              Точность: 1/2 г<br>
+              Размер платформы: 230x330 мм<br>
+              Тип дисплея: LED<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">МТ 6 МГДА (1/2; 230x330) «Базар»</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/009.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_27.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 6 кг<br>
+              Предел взвешевания min: 20 г<br>
+              Точность: 1/2 г<br>
+              Размер платформы: 230x330 мм<br>
+              Тип дисплея: LED<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-header">
+        <h1 class="product-header-title">Т 6 МГДА (1/2; 230x330) «Базар» 2.1 У</h1>
+      </div>
+      <div class="product-body">
+        <div class="click-product-body" onclick="window.location='../product/trading/010.html'">
+          <div class="product-image-wrap">
+            <div class="product-image">
+              <img src="../static/productimage/img_27.png" alt="Product Image" width="85%">
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-description">
+              Предел взвешевания max: 6 кг<br>
+              Предел взвешевания min: 20 г<br>
+              Точность: 1/2 г<br>
+              Размер платформы: 230x330 мм<br>
+              Тип дисплея: LED<br>
+            </p>>
+          </div>
+        </div>
+        <div class="product-sale">
+          <div class="product-actions">
+            <button class="order-button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+            <div id="modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Repeat for other products -->
+</main>
+<div id="footer"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('../static/fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch("../../static/salewindow.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('modal').innerHTML = data;
+            });
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var recipient = button.data('whatever'); // Extract info from data-* attributes
+
+    var modal = $(this);
+    //modal.find('#vesy-name').text(recipient); // Update the input field's value
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
