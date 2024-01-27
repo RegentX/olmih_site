@@ -104,10 +104,11 @@
 <div class="mt-4 mt-4-padding-bottom">
     <p class="custom-paragraph">
         <b>Для более точной информации и стоимости работ по техническому обслуживанию
-            весов позвоните по телефону: <b>8(495) 366-39-92</b>,
-            или отправьте электронную заявку по адресу: <b>info@olmih.ru</b></b>
+            весов позвоните по телефону: <a style="color: #173af5" data-toggle="modal" data-target="#exampleModal"><b>8(495) 366-39-92</b></a>,
+            или отправьте электронную заявку по адресу: <a style="color: #173af5"><b onclick="window.location='/feedback.html'">info@olmih.ru</b></a></b>
     </p>
 </div>
+<div id="modal"></div>
 <div id="footer"></div>
 <script>
     document.addEventListener('DOMContentLoaded', function(){
@@ -118,7 +119,25 @@
             });
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch("../../static/salewindow.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('modal').innerHTML = data;
+            });
+    });
+</script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var recipient = button.data('whatever'); // Extract info from data-* attributes
+
+        var modal = $(this);
+        //modal.find('#vesy-name').text(recipient); // Update the input field's value
+    });
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
