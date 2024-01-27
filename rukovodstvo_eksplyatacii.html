@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих - Руководства по эксплуатации</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./articles.css" />
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('static/fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='main.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h4 class="h-custom-pad-about-company">Руководства по эксплуатации</h4>
+</div>
+<div class="mt-4">
+    <p class="custom-paragraph">
+        <b>Мы понимаем, что иногда нет желания читать инструкции при первом включении весов, но иногда это просто необходимо. И если Вы случайно выбросили свою инструкцию к весам и не можете найти больше нигде, то мы с радостью поделимся информацием, которую собирали и хранили на нашем сайте. Наша коллекция инструкций пополняется еженедельно, и если Вы не нашли нужную для Вас инструкцию, то можете обратиться по <b><u onclick="window.location='feedback.html'">форме обраной связи</u></b> с указанием интересующего материала, и мы постараемся восполнить белые места этой страницы.</b>
+    </p>
+</div>
+<div class="mt-4 text-center">
+    <img src="/kartinkiclientnaya/brand.gif" alt="MASSA-K" class="img-fluid" height="200" width="200">
+    <p class=" text-center">
+        <b><a onclick="window.location='rukovodstvo_massa_k.html'" class="underline"><u>MASSA-K</u></a></b>
+    </p>
+</div>
+<div class="mt-4 text-center">
+    <img src="/kartinkiclientnaya/caslogoweb.jpg" alt="CAS" class="img-fluid" height="200" width="250">
+    <p class="text-center">
+        <b><a onclick="window.location='rukovodstvo_cas.html'" class="underline"><u>CAS</u></a></b>
+    </p>
+</div>
+<div class="mt-4 text-center">
+    <img src="/kartinkiclientnaya/logomiddlebg220.gif" alt="МИДЛ" class="img-fluid" height="200" width="250">
+    <p class=" text-center">
+        <b><a onclick="window.location='rukovodstvo_midl.html'" class="underline"><u>МИДЛ</u></a></b>
+    </p>
+</div>
+
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('static/fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

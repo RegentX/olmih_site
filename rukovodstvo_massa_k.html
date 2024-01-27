@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих - Руководство по эксплуатации к весам МАССА-К</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./articles.css" />
+    <link rel="stylesheet" href="./photogallery.css" />
+</head>
+<body>
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        margin: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        padding-top: 40px;
+    }
+
+    .gallery-item {
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden; /* Ensures that the image doesn't overflow the container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px; /* Fixed height for all gallery items */
+    }
+
+    .thumb {
+        width: auto; /* Adjust width automatically */
+        max-width: 100%; /* Image can be as wide as the container but no wider */
+        max-height: 70%; /* Adjust the height to maintain aspect ratio */
+        object-fit: cover; /* Cover the area, may crop the image */
+        margin-bottom: 10px; /* Space between image and caption */
+    }
+
+    .caption {
+        width: 100%; /* Stretch to the full width of its container */
+        box-sizing: content-box;
+        background-color: #f8f8f8;
+        color: #333;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9em;
+        height: 30%; /* Allocate the rest of the space to caption */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thumb:hover { opacity: 0.7; }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption text */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</body>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('static/fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='rukovodstvo_eksplyatacii.html'">Руководства</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h3 class="h-custom-pad-about-company">Руководство по эксплуатации к весам МАССА-К</h3>
+</div>
+<div class="gallery">
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/MK-А.jpeg" alt="Весы МК_А (однодиапазонные)" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/MKA.1diapazon.red2014.pdf" target="_blank">Инструкция к весам МК_А (однодиапазонные)</a></div>
+
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/MK-А.jpeg" alt="Весы МК_А (двухдиапазонные)" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/MKA.2diapazona.red12014.pdf" target="_blank">Инструкция к весам МК_А (двухдиапазонные)</a></div>
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/MK-А.jpeg" alt="Весы МК_А (трёхдиапазонные)" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/MKA.3diapazona.red2014.pdf" target="_blank">Инструкция к весам МК_А (трёхдиапазонные)</a></div>
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/PV.jpg" alt="Весы ПВ" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/PV.red2004.pdf" target="_blank">Инструкция к весам ПВ</a></div>
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/PV.jpg" alt="Весы ВТ" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/VT.red2004.pdf" target="_blank">Инструкция к весам ВТ</a></div>
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/tv.jpg" alt="Весы ТВ" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/A.TVred3.2.pdf" target="_blank">Инструкция к весам ТВ</a></div>
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/4d.jpg" alt="Весы Палетные 4D" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/4DU.red.2011.pdf" target="_blank">Инструкция к весам Палетные 4D</a></div>
+    </div>
+    <div class="gallery-item">
+        <img class="thumb" src="./photogallery/4dl.jpg" alt="Весы Платформенные 4D-LA" onclick="openModal(this)">
+        <div class="caption"><a href="./rukovodstva/4DLA.red2013.pdf" target="_blank">Инструкция к весам Платформенным 4D-LA</a></div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('static/fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+
+    function openModal(img) {
+        var modalImg = document.getElementById('img01');
+        var captionText = document.getElementById('caption');
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+        modalImg.src = img.src;
+        captionText.textContent = img.alt;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        var modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
+</body>
+</html>

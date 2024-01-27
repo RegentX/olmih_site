@@ -59,3 +59,18 @@
 .mt-4 {
     margin-right: 50px;
 }
+
+.custom-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.custom-paragraph {
+    margin-top: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
