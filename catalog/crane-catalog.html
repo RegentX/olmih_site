@@ -324,7 +324,7 @@
       </div>
     </div>
   </section>
-  <!-- Repeat for other products -->
+  <button onclick="topFunction()" id="myBtn" title="Наверх">Наверх</button>
 </main>
 <div id="footer"></div>
 <script>
@@ -357,6 +357,23 @@
     //modal.find('#vesy-name').text(recipient); // Update the input field's value
   });
 
+</script>
+<script>// Когда пользователь прокручивает вниз 20px от верха документа, показывать кнопку
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Когда пользователь нажимает на кнопку, прокрутить наверх страницы
+function topFunction() {
+  document.body.scrollTop = 0; // Для Safari
+  document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+}
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
