@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олмих - Ремонт электронных весов</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Frank+Ruhl+Libre:wght@700&family=Graduate&family=Inconsolata:wght@900&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./scalesrepair.css" />
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+        }
+        .td-custom {
+            font-weight: bold;
+        }
+        .table-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('static/fragment/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    });
+</script>
+<section class="routing">
+    <div class="route-button-wrap">
+        <button class="route-button" onclick="window.location='index.html'">Главная</button>
+    </div>
+</section>
+<div class="mt-4">
+    <h4 class="h-custom-pad-about-company">Ремонт электронных весов</h4>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad"><b>Ремонт электронных весов</b> – сложный технологический процесс. Самостоятельный ремонт весов может привести к более сложным поломкам.</p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad">Современный мастер по ремонту весов должен обладать знаниями о назначении и принципе работы весов, уметь читать электротехнические схемы и чертежи, знать основные свойства изоляционных и токопроводящих материалов, способы регулировки и градуировки приборов, уметь работать с паяльным и диагностирующим оборудованием. </p>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad"><b>В <a href="index.html" target="_blank" title="ООО &quot;ОЛМИХ&quot;">сервисном центре компании «ОЛМИХ»</a> работает дружный коллектив, обладающий большим запасом знаний в области ремонта электронных весов.</b></p>
+</div>
+<div class="mt-4">
+    <h3 class="h-custom-pad">Основные поломки электронных весов:</h3>
+    <ul class="ul-custom-pad">
+        <li>
+            Весы показывают неправильный вес
+        </li>
+        <li>
+            Весы не включаются
+        </li>
+        <li>
+            Не работает клавиатура весов
+        </li>
+        <li>
+            Весы не работают с внешними устройствами
+        </li>
+        <li>
+            Корпус весов поврежден посторонними предметами
+        </li>
+        <li>
+            Индикация весов показывает не все сегменты
+        </li>
+    </ul>
+</div>
+<div class="mt-4">
+    <p class="p-custom-pad"><b>Эти и другие поломки мастера по ремонту весов нашей компании смогут устранить и предоставить гарантии на выполненные работы.</b></p>
+</div>
+
+
+<div class="mt-4">
+    <p class="p-custom-pad">Уверены, что даже самые сложные ситуации вы можете нам доверить,
+        так как благодаря оснащенности и опыту мы умеем ремонтировать <b>любые весы</b>. </p>
+</div>
+
+
+<div class="mt-5">
+    <h3 class="h-custom-pad">Предлагаем прейскурант цен на некоторые виды работ:</h3>
+    <div class="table-container">
+        <table>
+            <tr>
+                <td>НАЗВАНИЕ РЕМОНТА</td>
+                <td>СТОИМОСТЬ РАБОТ</td>
+            </tr>
+            <tr>
+                <td>Замена индикатора электронных весов</td>
+                <td class="td-custom">от 700 руб</td>
+            </tr>
+            <tr>
+                <td>Замена датчика электронных весов</td>
+                <td class="td-custom">от 500 руб</td>
+            </tr>
+            <tr>
+                <td>Замена клавиатуры электронных весов</td>
+                <td class="td-custom">от 400 руб</td>
+            </tr>
+            <tr>
+                <td>Замена платы электронных весов</td>
+                <td class="td-custom">от 500 руб</td>
+            </tr>
+            <tr>
+                <td>Замена разъема электронных весов</td>
+                <td class="td-custom">от 400 руб</td>
+            </tr>
+            <tr>
+                <td>Калибровка электронных весов</td>
+                <td class="td-custom">от 500 руб</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="mt-4-padding-bottom">
+    <p class="p-custom-pad">Это неполный прайс на работы по ремонту электронных весов. Уточняйте стоимость работ у <a href="contacts.html" target="_blank" title="контакты">менеджеров нашей компании.</a></p>
+</div>
+<div class="mt-4-padding-bottom">
+    <p class="p-custom-pad">Обращаем внимание, что в стоимость работ цена запасных частей не входит!!!</p>
+</div>
+<div class="mt-4-padding-bottom">
+    <p class="p-custom-pad" style="color: darkorange">Новая услуга: Прямой звонок мастеру 8-916-936-29-69</p>
+</div>
+
+<div id="footer"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        fetch('static/fragment/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
